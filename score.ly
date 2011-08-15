@@ -155,6 +155,9 @@ staffGlockenspiel = \new Staff {
 	}
 
 }
+staffPercussion = \new DrumStaff {
+  \set DrumStaff.instrumentName = "Percussion"
+}
 staffHarp = \new PianoStaff {
 	\set PianoStaff.midiInstrument = #"harp"
 	\set PianoStaff.instrumentName = #"Harp"
@@ -265,6 +268,7 @@ staffContrabass = \new Staff {
 		\staffTenorTrombones
 		\staffBassTrombone
 		\staffGlockenspiel
+		\staffPercussion
 		\staffHarp
 		\staffVoice
 		\context Lyrics = "lmelodyVoi" \lyricmode { \lyricsto "melodyVoi" \verse }
