@@ -10,6 +10,7 @@
 }
 
 \include "english.ly"
+\include "parts/cello.ly"
 
 verse= \lyricmode {
 
@@ -231,14 +232,7 @@ staffViola = \new Staff {
 staffCello = \new Staff {
 	\set Staff.instrumentName = "Cello"
 	\set Staff.midiInstrument = "cello"
-	\key c \minor
-	\clef bass
-	\relative c' { 	
- % Type notes here 
-
-	\bar "|."
-	}
-
+	\celloNotes
 }
 staffContrabass = \new Staff {
 	\set Staff.instrumentName = "Contrabass"
