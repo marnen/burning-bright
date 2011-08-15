@@ -11,6 +11,7 @@
 }
 
 \include "english.ly"
+\include "parts/bassoon1.ly"
 \include "parts/voice.ly"
 \include "parts/violin1.ly"
 \include "parts/violin2.ly"
@@ -77,14 +78,7 @@ staffBassoons = \new Staff {
 	\set Staff.instrumentName = "2 Bassoons"
 	\set Staff.shortInstrumentName = "Bns."
 	\set Staff.midiInstrument = "bassoon"
-	\key c \minor
-	\clef bass
-	\relative c' { 	
- % Type notes here 
-
-	\bar "|."
-	}
-
+	\partcombine \bassoonINotes { }
 }
 staffHornsInII = \new Staff {
 	\set Staff.instrumentName = \markup { \column { 1 2 } }
