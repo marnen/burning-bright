@@ -11,6 +11,7 @@
 }
 
 \include "english.ly"
+\include "parts/violin1.ly"
 \include "parts/cello.ly"
 \include "parts/contrabass.ly"
 
@@ -212,14 +213,7 @@ staffViolinI = \new Staff {
 	\set Staff.instrumentName = "1"
 	\set Staff.shortInstrumentName = "1"
 	\set Staff.midiInstrument = "violin"
-	\key c \minor
-	\clef treble
-	\relative c' { 	
- % Type notes here 
-
-	\bar "|."
-	}
-
+	\violinINotes
 }
 staffViolinII = \new Staff {
 	\set Staff.instrumentName = "2"
