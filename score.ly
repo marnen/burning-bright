@@ -12,6 +12,7 @@
 
 \include "english.ly"
 \include "parts/cello.ly"
+\include "parts/contrabass.ly"
 
 verse= \lyricmode {
 
@@ -256,15 +257,7 @@ staffContrabass = \new Staff {
 	\set Staff.instrumentName = "Contrabass"
 	\set Staff.shortInstrumentName = "Cb."
 	\set Staff.midiInstrument = "contrabass"
-	\transposition c'
-	\key c \minor
-	\clef bass
-	\relative c' { 	
- % Type notes here 
-
-	\bar "|."
-	}
-
+	\contrabassNotes
 }
 
 

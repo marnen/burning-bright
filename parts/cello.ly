@@ -34,3 +34,5 @@ celloNotes = {
     c'=4 r af r |
   }
 }
+
+\addQuote "cello" { \celloNotes }
