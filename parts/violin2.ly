@@ -1,7 +1,7 @@
 \version "2.14.2"
 \include "english.ly"
 
-violinINotes = {
+violinIINotes = {
   % Orchestration p. 1
   \key c \minor
   <<
@@ -24,16 +24,14 @@ violinINotes = {
     }
     {
       \repeat unfold 12 {
-        \relative d' {
-          r8 d([ g d)]
-        }
+        r8 c'([ g' c'])]
       }
       \repeat unfold 7 {
-        \relative c''' {
-          r8 cs([ g d cs g=')]
+        \relative d'' {
+          r8 d([ cs g d cs=')]
         }
       }
-      r8 cs''' |
+      r8 d'' |
     }
   >>
   \key a \minor
@@ -46,9 +44,12 @@ violinINotes = {
       s1.\mp
     }
     {
-      \repeat unfold 8 {
-        \relative d''' {
-          r8 d( b a gs d='')
+      \relative g'' {
+        r8 g( f d b gs=')
+      }
+      \repeat unfold 7 {
+        \relative g'' {
+          r8 g!( f d b gs=')
         }
       }
     }
@@ -56,10 +57,8 @@ violinINotes = {
   \bar "||"
   \key c \minor
   \repeat unfold 2 {
-    \relative d' {
-      r8 d( g d)
-    }
+    r8 c'([ g' c'])]
   }
 }
 
-\addQuote "violin1" { \violinINotes }
+\addQuote "violin2" { \violinIINotes }
