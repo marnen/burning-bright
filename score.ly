@@ -100,8 +100,8 @@ staffHornsInII = \new Staff {
 
 }
 staffHornsIIInIV = \new Staff {
-	\set Staff.instrumentName = \markup { \column { 1 2 } }
-	\set Staff.shortInstrumentName = \markup { \column { 1 2 } }
+	\set Staff.instrumentName = \markup { \column { 3 4 } }
+	\set Staff.shortInstrumentName = \markup { \column { 3 4 } }
 	\set Staff.midiInstrument = "french horn"
 	\transposition f,
 	\key c \minor
@@ -269,27 +269,51 @@ staffContrabass = \new Staff {
 
 \score {
 	<<
-		\staffPiccolo
-		\staffFlutes
-		\staffClarinets
-		\staffOboes
-		\staffBassoons
-		\staffHornsInII
-		\staffHornsIIInIV
-		\staffTrumpets
-		\staffTenorTrombones
-		\staffBassTrombone
-		\staffGlockenspiel
-		\staffPercussion
+	  \new StaffGroup << 
+	    \new GrandStaff <<
+        \staffPiccolo
+        \staffFlutes
+      >>
+      \staffClarinets
+      \staffOboes
+      \staffBassoons
+    >>
+    \new StaffGroup <<
+		  \new PianoStaff {
+		    \set PianoStaff.instrumentName = "Horns in F"
+		    \set PianoStaff.shortInstrumentName = "Hns. (F)"
+		    <<
+          \staffHornsInII
+          \staffHornsIIInIV
+        >>
+      }
+      \staffTrumpets
+      \new GrandStaff <<
+        \staffTenorTrombones
+        \staffBassTrombone
+      >>
+    >>
+    \new StaffGroup <<
+      \staffGlockenspiel
+      \staffPercussion
+    >>
 		\staffHarp
 		\staffVoice
 		\context Lyrics = "lmelodyVoi" \lyricmode { \lyricsto "melodyVoi" \verse }
 		
-		\staffViolinI
-		\staffViolinII
-		\staffViola
-		\staffCello
-		\staffContrabass
+		\new StaffGroup <<
+		  \new PianoStaff {
+		    \set PianoStaff.instrumentName = "Violins"
+		    \set PianoStaff.shortInstrumentName = "Vns."
+		    <<
+          \staffViolinI
+          \staffViolinII
+        >>
+      }
+      \staffViola
+      \staffCello
+      \staffContrabass
+    >>
 	>>
 	
 	\midi {
