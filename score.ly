@@ -20,6 +20,7 @@ verse= \lyricmode {
 staffPiccolo = \new Staff {
 	\time 4/4
 	\set Staff.instrumentName = "Piccolo"
+	\set Staff.shortInstrumentName = "Picc."
 	\set Staff.midiInstrument = "piccolo"
 	\transposition c'
 	\key c \minor
@@ -32,7 +33,8 @@ staffPiccolo = \new Staff {
 
 }
 staffFlutes = \new Staff {
-	\set Staff.instrumentName = "Flute"
+	\set Staff.instrumentName = "2 Flutes"
+	\set Staff.shortInstrumentName = "Fls."
 	\set Staff.midiInstrument = "flute"
 	\key c \minor
 	\clef treble
@@ -44,7 +46,8 @@ staffFlutes = \new Staff {
 
 }
 staffClarinets = \new Staff {
-	\set Staff.instrumentName = "Clarinet in Bb"
+	\set Staff.instrumentName = \markup { \concat { "2 Clarinets in B" \smaller \flat } }
+	\set Staff.shortInstrumentName = \markup { \concat { "Cls. (B" \smaller \flat \larger ")" } }
 	\set Staff.midiInstrument = "clarinet"
 	\transposition bf,
 	\key c \minor
@@ -57,7 +60,8 @@ staffClarinets = \new Staff {
 
 }
 staffOboes = \new Staff {
-	\set Staff.instrumentName = "Oboe"
+	\set Staff.instrumentName = "2 Oboes"
+	\set Staff.shortInstrumentName = "Obs."
 	\set Staff.midiInstrument = "oboe"
 	\key c \minor
 	\clef treble
@@ -69,7 +73,8 @@ staffOboes = \new Staff {
 
 }
 staffBassoons = \new Staff {
-	\set Staff.instrumentName = "Bassoon"
+	\set Staff.instrumentName = "2 Bassoons"
+	\set Staff.shortInstrumentName = "Bns."
 	\set Staff.midiInstrument = "bassoon"
 	\key c \minor
 	\clef bass
@@ -81,7 +86,8 @@ staffBassoons = \new Staff {
 
 }
 staffHornsInII = \new Staff {
-	\set Staff.instrumentName = "Horn in F"
+	\set Staff.instrumentName = \markup { \column { 1 2 } }
+	\set Staff.shortInstrumentName = \markup { \column { 1 2 } }
 	\set Staff.midiInstrument = "french horn"
 	\transposition f,
 	\key c \minor
@@ -94,7 +100,8 @@ staffHornsInII = \new Staff {
 
 }
 staffHornsIIInIV = \new Staff {
-	\set Staff.instrumentName = "Horn in F"
+	\set Staff.instrumentName = \markup { \column { 1 2 } }
+	\set Staff.shortInstrumentName = \markup { \column { 1 2 } }
 	\set Staff.midiInstrument = "french horn"
 	\transposition f,
 	\key c \minor
@@ -107,9 +114,9 @@ staffHornsIIInIV = \new Staff {
 
 }
 staffTrumpets = \new Staff {
-	\set Staff.instrumentName = "Trumpet in C"
+	\set Staff.instrumentName = "3 Trumpets in C"
+	\set Staff.shortInstrumentName = "Tpts. (C)"
 	\set Staff.midiInstrument = "trumpet"
-	\transposition bf,
 	\key c \minor
 	\clef treble
 	\relative c' { 	
@@ -120,7 +127,8 @@ staffTrumpets = \new Staff {
 
 }
 staffTenorTrombones = \new Staff {
-	\set Staff.instrumentName = "Trombone"
+	\set Staff.instrumentName = "2 Tenor Trombones"
+	\set Staff.shortInstrumentName = "T.Tbns."
 	\set Staff.midiInstrument = "trombone"
 	\key c \minor
 	\clef bass
@@ -132,7 +140,8 @@ staffTenorTrombones = \new Staff {
 
 }
 staffBassTrombone = \new Staff {
-	\set Staff.instrumentName = "Trombone"
+	\set Staff.instrumentName = "Bass Trombone"
+	\set Staff.shortInstrumentName = "B.Tbn."
 	\set Staff.midiInstrument = "trombone"
 	\key c \minor
 	\clef bass
@@ -145,6 +154,7 @@ staffBassTrombone = \new Staff {
 }
 staffGlockenspiel = \new Staff {
 	\set Staff.instrumentName = "Glockenspiel"
+	\set Staff.shortInstrumentName = "Glock."
 	\set Staff.midiInstrument = "glockenspiel"
 	\transposition c''
 	\key c \minor
@@ -158,10 +168,12 @@ staffGlockenspiel = \new Staff {
 }
 staffPercussion = \new DrumStaff {
   \set DrumStaff.instrumentName = "Percussion"
+  \set DrumStaff.shortInstrumentName = "Perc."
 }
 staffHarp = \new PianoStaff {
 	\set PianoStaff.midiInstrument = #"harp"
 	\set PianoStaff.instrumentName = #"Harp"
+	\set PianoStaff.shortInstrumentName = "Hp."
 				<<
 		\context Staff = "RH" {  % Right hand 
 			\clef treble
@@ -179,8 +191,9 @@ staffHarp = \new PianoStaff {
 }
 
 staffVoice = \new Staff {
-	\set Staff.instrumentName = "Voice"
-	\set Staff.midiInstrument = "voice oohs"
+	\set Staff.instrumentName = "Joe Saul"
+	\set Staff.shortInstrumentName = "J.S."
+	\set Staff.midiInstrument = "bassoon"
 	\key c \minor
 	\clef treble
 	\relative c' { 	
@@ -194,7 +207,8 @@ staffVoice = \new Staff {
 
 }
 staffViolinI = \new Staff {
-	\set Staff.instrumentName = "Violin"
+	\set Staff.instrumentName = "1"
+	\set Staff.shortInstrumentName = "1"
 	\set Staff.midiInstrument = "violin"
 	\key c \minor
 	\clef treble
@@ -206,7 +220,8 @@ staffViolinI = \new Staff {
 
 }
 staffViolinII = \new Staff {
-	\set Staff.instrumentName = "Violin"
+	\set Staff.instrumentName = "2"
+	\set Staff.shortInstrumentName = "2"
 	\set Staff.midiInstrument = "violin"
 	\key c \minor
 	\clef treble
@@ -219,6 +234,7 @@ staffViolinII = \new Staff {
 }
 staffViola = \new Staff {
 	\set Staff.instrumentName = "Viola"
+	\set Staff.shortInstrumentName = "Va."
 	\set Staff.midiInstrument = "viola"
 	\key c \minor
 	\clef alto
@@ -230,12 +246,14 @@ staffViola = \new Staff {
 
 }
 staffCello = \new Staff {
-	\set Staff.instrumentName = "Cello"
+	\set Staff.instrumentName = "Violoncello"
+	\set Staff.shortInstrumentName = "Vc."
 	\set Staff.midiInstrument = "cello"
 	\celloNotes
 }
 staffContrabass = \new Staff {
 	\set Staff.instrumentName = "Contrabass"
+	\set Staff.shortInstrumentName = "Cb."
 	\set Staff.midiInstrument = "contrabass"
 	\transposition c'
 	\key c \minor
