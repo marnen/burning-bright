@@ -13,6 +13,7 @@
 \include "english.ly"
 \include "parts/violin1.ly"
 \include "parts/violin2.ly"
+\include "parts/viola.ly"
 \include "parts/cello.ly"
 \include "parts/contrabass.ly"
 
@@ -226,14 +227,7 @@ staffViola = \new Staff {
 	\set Staff.instrumentName = "Viola"
 	\set Staff.shortInstrumentName = "Va."
 	\set Staff.midiInstrument = "viola"
-	\key c \minor
-	\clef alto
-	\relative c' { 	
- % Type notes here 
-
-	\bar "|."
-	}
-
+	\violaNotes
 }
 staffCello = \new Staff {
 	\set Staff.instrumentName = "Violoncello"
