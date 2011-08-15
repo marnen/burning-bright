@@ -11,16 +11,12 @@
 }
 
 \include "english.ly"
+\include "parts/voice.ly"
 \include "parts/violin1.ly"
 \include "parts/violin2.ly"
 \include "parts/viola.ly"
 \include "parts/cello.ly"
-\include "parts/contrabass.ly"
-
-verse= \lyricmode {
-
-}
- 
+\include "parts/contrabass.ly" 
 
 staffPiccolo = \new Staff {
 	\time 4/4
@@ -198,18 +194,11 @@ staffHarp = \new PianoStaff {
 staffVoice = \new Staff {
 	\set Staff.instrumentName = "Joe Saul"
 	\set Staff.shortInstrumentName = "J.S."
-	\set Staff.midiInstrument = "bassoon"
-	\key c \minor
-	\clef treble
-	\relative c' { 	
-		\context Voice = "melodyVoi" {
-			\dynamicUp		
- % Type notes here 
-		}
-
-	\bar "|."
-	}
-
+	\set Staff.midiInstrument = "bassoon"	
+  \context Voice = "voice" {
+    \dynamicUp		
+    \voiceNotes
+  }
 }
 staffViolinI = \new Staff {
 	\set Staff.instrumentName = "1"
@@ -275,7 +264,7 @@ staffContrabass = \new Staff {
     >>
 		\staffHarp
 		\staffVoice
-		\context Lyrics = "lmelodyVoi" \lyricmode { \lyricsto "melodyVoi" \verse }
+		\context Lyrics = "lyrics" \lyricmode { \lyricsto "voice" \verse }
 		
 		\new StaffGroup <<
 		  \new PianoStaff {
