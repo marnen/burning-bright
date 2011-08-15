@@ -30,7 +30,7 @@ staffPiccolo = \new Staff {
 	}
 
 }
-staffFlute = \new Staff {
+staffFlutes = \new Staff {
 	\set Staff.instrumentName = "Flute"
 	\set Staff.midiInstrument = "flute"
 	\key c \minor
@@ -42,7 +42,7 @@ staffFlute = \new Staff {
 	}
 
 }
-staffClarinetInBb = \new Staff {
+staffClarinets = \new Staff {
 	\set Staff.instrumentName = "Clarinet in Bb"
 	\set Staff.midiInstrument = "clarinet"
 	\transposition bf,
@@ -55,7 +55,7 @@ staffClarinetInBb = \new Staff {
 	}
 
 }
-staffOboe = \new Staff {
+staffOboes = \new Staff {
 	\set Staff.instrumentName = "Oboe"
 	\set Staff.midiInstrument = "oboe"
 	\key c \minor
@@ -67,7 +67,7 @@ staffOboe = \new Staff {
 	}
 
 }
-staffBassoon = \new Staff {
+staffBassoons = \new Staff {
 	\set Staff.instrumentName = "Bassoon"
 	\set Staff.midiInstrument = "bassoon"
 	\key c \minor
@@ -79,7 +79,7 @@ staffBassoon = \new Staff {
 	}
 
 }
-staffHornInF = \new Staff {
+staffHornsInII = \new Staff {
 	\set Staff.instrumentName = "Horn in F"
 	\set Staff.midiInstrument = "french horn"
 	\transposition f,
@@ -92,7 +92,7 @@ staffHornInF = \new Staff {
 	}
 
 }
-staffHornInFII = \new Staff {
+staffHornsIIInIV = \new Staff {
 	\set Staff.instrumentName = "Horn in F"
 	\set Staff.midiInstrument = "french horn"
 	\transposition f,
@@ -105,7 +105,7 @@ staffHornInFII = \new Staff {
 	}
 
 }
-staffTrumpetInC = \new Staff {
+staffTrumpets = \new Staff {
 	\set Staff.instrumentName = "Trumpet in C"
 	\set Staff.midiInstrument = "trumpet"
 	\transposition bf,
@@ -118,7 +118,7 @@ staffTrumpetInC = \new Staff {
 	}
 
 }
-staffTrombone = \new Staff {
+staffTenorTrombones = \new Staff {
 	\set Staff.instrumentName = "Trombone"
 	\set Staff.midiInstrument = "trombone"
 	\key c \minor
@@ -130,7 +130,7 @@ staffTrombone = \new Staff {
 	}
 
 }
-staffTromboneII = \new Staff {
+staffBassTrombone = \new Staff {
 	\set Staff.instrumentName = "Trombone"
 	\set Staff.midiInstrument = "trombone"
 	\key c \minor
@@ -189,7 +189,7 @@ staffVoice = \new Staff {
 	}
 
 }
-staffViolin = \new Staff {
+staffViolinI = \new Staff {
 	\set Staff.instrumentName = "Violin"
 	\set Staff.midiInstrument = "violin"
 	\key c \minor
@@ -255,21 +255,21 @@ staffContrabass = \new Staff {
 \score {
 	<<
 		\staffPiccolo
-		\staffFlute
-		\staffClarinetInBb
-		\staffOboe
-		\staffBassoon
-		\staffHornInF
-		\staffHornInFII
-		\staffTrumpetInC
-		\staffTrombone
-		\staffTromboneII
+		\staffFlutes
+		\staffClarinets
+		\staffOboes
+		\staffBassoons
+		\staffHornsInII
+		\staffHornsIIInIV
+		\staffTrumpets
+		\staffTenorTrombones
+		\staffBassTrombone
 		\staffGlockenspiel
 		\staffHarp
 		\staffVoice
 		\context Lyrics = "lmelodyVoi" \lyricmode { \lyricsto "melodyVoi" \verse }
 		
-		\staffViolin
+		\staffViolinI
 		\staffViolinII
 		\staffViola
 		\staffCello
