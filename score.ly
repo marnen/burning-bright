@@ -4,7 +4,7 @@
 
 \header {
 	title = "Burning Bright" 
- poet = "John Steinbeck" 
+  poet = "John Steinbeck" 
  	composer = "Marnen E. Laibow-Koser" 
  	copyright = "Copyright © 2010–2011 Marnen E. Laibow-Koser. All rights reserved." 
 
@@ -12,6 +12,7 @@
 
 \include "english.ly"
 \include "parts/bassoon1.ly"
+\include "parts/bassoon2.ly"
 \include "parts/voice.ly"
 \include "parts/violin1.ly"
 \include "parts/violin2.ly"
@@ -75,10 +76,12 @@ staffOboes = \new Staff {
 
 }
 staffBassoons = \new Staff {
+  \set Staff.soloText = "1."
+  \set Staff.soloIIText = "2."
 	\set Staff.instrumentName = "2 Bassoons"
 	\set Staff.shortInstrumentName = "Bns."
 	\set Staff.midiInstrument = "bassoon"
-	\partcombine \bassoonINotes { }
+	\partcombine \bassoonINotes \bassoonIINotes
 }
 staffHornsInII = \new Staff {
 	\set Staff.instrumentName = \markup { \column { 1 2 } }

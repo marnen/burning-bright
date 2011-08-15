@@ -2,6 +2,8 @@
 \include "english.ly"
 \include "cello.ly"
 
+\addQuote "cello" { \celloNotes }
+
 bassoonINotes = {
   % Orchestration p. 1
   \key c \minor
@@ -12,7 +14,7 @@ bassoonINotes = {
   R1. |
   \time 4/4
   \relative b,, {
-    r2 b~( |
+    r2 b~(\p |
     % p. 2
     \time 3/2
     b\< f' ef)\! |
