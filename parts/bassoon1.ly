@@ -32,6 +32,24 @@ bassoonINotes = {
     s2
   }
   r2 |
+  % p. 5
+  R1 |
+  \time 3/2
+  R1. |
+  \relative c, {
+    \time 4/4
+    r8 cs(\p d e~ e2) |
+    \time 3/2
+    r8 e( f g~ g2~ g8 a bf c) |
+    % p. 6
+    \key d \minor
+    \time 4/4
+    cs=1 |
+    r2 r8 ef(\< df c~\! |
+    \time 6/4
+    c4)\mf r r d cs g~ |
+    g=,8 d' ef d c! g' d( ef f g bf c) |
+  }
 }
 
 \addQuote "bassoon1" { \bassoonINotes }
