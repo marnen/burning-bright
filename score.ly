@@ -213,6 +213,7 @@ staffContrabass = \new Staff {
 
 \score {
 	<<
+	  \tempo 4 = 132
 	  \new StaffGroup << 
 	    \new GrandStaff <<
         \staffPiccolo
