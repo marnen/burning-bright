@@ -11,6 +11,7 @@
 }
 
 \include "english.ly"
+\include "parts/piccolo.ly"
 \include "parts/bassoon1.ly"
 \include "parts/bassoon2.ly"
 \include "parts/voice.ly"
@@ -25,15 +26,7 @@ staffPiccolo = \new Staff {
 	\set Staff.instrumentName = "Piccolo"
 	\set Staff.shortInstrumentName = "Picc."
 	\set Staff.midiInstrument = "piccolo"
-	\transposition c'
-	\key c \minor
-	\clef treble
-	\relative c' { 	
- % Type notes here 
-
-	\bar "|."
-	}
-
+	\piccoloNotes
 }
 staffFlutes = \new Staff {
 	\set Staff.instrumentName = "2 Flutes"
