@@ -48,7 +48,7 @@ voiceNotes = {
       % p. 6
       \key d \minor
       \time 4/4
-      r8 e c'4 bf e,
+      r8 e c'!4 bf e,
       d'='2\< \times 2/3 { r4\! e!2\mf } |
       \time 6/4
       c8 bf a=4 r r c! d |
