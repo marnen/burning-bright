@@ -2,7 +2,7 @@
 \include "english.ly"
 
 verse = \lyricmode {
-  But re -- mem -- ber -- ing— re -- mem -- ber -- ing the pain— it’s like look -- ing last in a cof -- fin— there it is. The face is dead and you can for -- get it. But if you do not look, the face is nev -- er dead and you can -- not in your back mind say good -- by.
+  But re -- mem -- ber -- ing— re -- mem -- ber -- ing the pain— it’s like look -- ing last in a cof -- fin— there it is. The face is dead and you can for -- get it. But if you do not look, the face is nev -- er dead and you can -- not in your back mind say good -- by. And so I am look -- ing back at the sad -- ness so deep dug in. The top mind de -- nies ste -- ril -- i -- ty. I re -- mem -- ber how it was.
 }
 
 voiceNotes = {
@@ -37,6 +37,22 @@ voiceNotes = {
       \time 4/4
       \key c \minor
       c2 r |
+      % p. 5
+      r8 d= ef4 r2 |
+      \time 3/2
+      r4 d8 c d4. g8 d4 c8 d |
+      \time 4/4
+      ef2 g4 r4 |
+      \time 3/2
+      r e bf' a e!= r |
+      % p. 6
+      \key d \minor
+      \time 4/4
+      r8 e c' bf e,
+      d'='2\< \times 2/3 { r4\! e!2\mf } |
+      \time 6/4
+      c8 bf a=4 r r c! d |
+      ef4. d8 c4 r ef2 |
     }
   }
 }
