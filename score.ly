@@ -218,8 +218,8 @@ staffContrabass = \new Staff {
         \staffPiccolo
         \staffFlutes
       >>
-      \staffClarinets
       \staffOboes
+      \staffClarinets
       \staffBassoons
     >>
     \new StaffGroup <<
