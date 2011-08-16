@@ -32,6 +32,22 @@ celloNotes = {
     \key c \minor
     \time 4/4
     c'=4 r af r |
+    % p. 5
+    c r af r |
+    \time 3/2
+    c r af r c r |
+    \time 4/4
+    af r c r |
+    \time 3/2
+    f= r ef! r a, r |
+    % p. 6
+    \key d \minor
+    \time 4/4
+    d= r bf r |
+    ef\< r gs= r\! |
+    \time 6/4
+    a,=,2_\markup { \dynamic mf \italic pesante } r4 ef2 r4 |
+    a2 r4 ef2 r4 |
   }
 }
 
