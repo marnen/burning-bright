@@ -24,6 +24,7 @@
 \include "parts/horn2.ly"
 \include "parts/horn3.ly"
 \include "parts/horn4.ly"
+\include "parts/trumpet1.ly"
 
 \include "parts/voice.ly"
 \include "parts/violin1.ly"
@@ -97,14 +98,7 @@ staffTrumpets = \new Staff {
 	\set Staff.midiInstrument = "trumpet"
   \set Staff.soloText = "1."
   \set Staff.soloIIText = "2."
-	\key c \minor
-	\clef treble
-	\relative c' { 	
- % Type notes here 
-
-	\bar "|."
-	}
-
+	\trumpetINotes
 }
 staffTenorTrombones = \new Staff {
 	\set Staff.instrumentName = "2 Tenor Trombones"
