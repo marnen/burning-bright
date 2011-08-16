@@ -13,6 +13,7 @@
 \include "english.ly"
 \include "parts/piccolo.ly"
 \include "parts/oboe1.ly"
+\include "parts/oboe2.ly"
 \include "parts/clarinet1.ly"
 \include "parts/clarinet2.ly"
 \include "parts/bassoon1.ly"
@@ -48,7 +49,7 @@ staffOboes = \new Staff {
 	\set Staff.instrumentName = "2 Oboes"
 	\set Staff.shortInstrumentName = "Obs."
 	\set Staff.midiInstrument = "oboe"
-	\oboeINotes
+	\partcombine \oboeINotes \oboeIINotes
 }
 staffClarinets = \new Staff {
 	\set Staff.instrumentName = \markup { \concat { "2 Clarinets in B" \smaller \flat } }

@@ -1,7 +1,8 @@
 \version "2.14.2"
 \include "english.ly"
+\include "oboe1.ly"
 
-oboeINotes = {
+oboeIINotes = {
   % Orchestration p. 1
   \clef treble
   \key c \minor
@@ -21,21 +22,7 @@ oboeINotes = {
   R1 |
   \key a \minor
   \time 6/4
-  <<
-    {
-      \repeat unfold 8 {
-        \relative a'' {
-          r8 af( g af f e)
-        }
-      }
-    }
-    {
-      s8 s\f s2 s2. |
-      s1. |
-      s8 s\> s2 s s8 s\! |
-      s8 s\mp
-    }
-  >>
+  \quoteDuring #"oboe1" { s1.*4 }
   \bar "||"
   % p. 4
   \time 4/4
@@ -43,4 +30,4 @@ oboeINotes = {
   R1 |
 }
 
-\addQuote "oboe1" { \oboeINotes }
+\addQuote "oboe2" { \oboeIINotes }
