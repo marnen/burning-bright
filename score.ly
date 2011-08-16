@@ -43,18 +43,24 @@ staffFlutes = \new Staff {
 	\set Staff.instrumentName = "2 Flutes"
 	\set Staff.shortInstrumentName = "Fls."
 	\set Staff.midiInstrument = "flute"
+  \set Staff.soloText = "1."
+  \set Staff.soloIIText = "2."
 	\fluteINotes
 }
 staffOboes = \new Staff {
 	\set Staff.instrumentName = "2 Oboes"
 	\set Staff.shortInstrumentName = "Obs."
 	\set Staff.midiInstrument = "oboe"
+  \set Staff.soloText = "1."
+  \set Staff.soloIIText = "2."
 	\partcombine \oboeINotes \oboeIINotes
 }
 staffClarinets = \new Staff {
 	\set Staff.instrumentName = \markup { \concat { "2 Clarinets in B" \smaller \flat } }
 	\set Staff.shortInstrumentName = \markup { \concat { "Cls. (B" \smaller \flat \larger ")" } }
 	\set Staff.midiInstrument = "clarinet"
+  \set Staff.soloText = "1."
+  \set Staff.soloIIText = "2."
 	\transposition bf
 	\partcombine \clarinetINotes \clarinetIINotes
 }
@@ -71,6 +77,8 @@ staffHornsInII = \new Staff {
 	\set Staff.instrumentName = \markup { \column { 1 2 } }
 	\set Staff.shortInstrumentName = \markup { \column { 1 2 } }
 	\set Staff.midiInstrument = "french horn"
+  \set Staff.soloText = "1."
+  \set Staff.soloIIText = "2."
 	\transposition f
 	\partcombine \hornINotes \hornIINotes
 }
@@ -78,6 +86,8 @@ staffHornsIIInIV = \new Staff {
 	\set Staff.instrumentName = \markup { \column { 3 4 } }
 	\set Staff.shortInstrumentName = \markup { \column { 3 4 } }
 	\set Staff.midiInstrument = "french horn"
+  \set Staff.soloText = "3."
+  \set Staff.soloIIText = "4."
 	\transposition f
 	\partcombine \hornIIINotes \hornIVNotes
 }
@@ -85,6 +95,8 @@ staffTrumpets = \new Staff {
 	\set Staff.instrumentName = "3 Trumpets in C"
 	\set Staff.shortInstrumentName = "Tpts. (C)"
 	\set Staff.midiInstrument = "trumpet"
+  \set Staff.soloText = "1."
+  \set Staff.soloIIText = "2."
 	\key c \minor
 	\clef treble
 	\relative c' { 	
@@ -98,6 +110,8 @@ staffTenorTrombones = \new Staff {
 	\set Staff.instrumentName = "2 Tenor Trombones"
 	\set Staff.shortInstrumentName = "T.Tbns."
 	\set Staff.midiInstrument = "trombone"
+  \set Staff.soloText = "1."
+  \set Staff.soloIIText = "2."
 	\key c \minor
 	\clef bass
 	\relative c' { 	
