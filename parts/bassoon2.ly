@@ -32,6 +32,22 @@ bassoonIINotes = {
     \key c \minor
     ef2 \partcombineAutomatic r |
   }
+  % p. 5
+  R1 |
+  \time 3/2
+  R1. |
+  \time 4/4
+  R1 |
+  \time 3/2
+  R1. |
+  % p. 6
+  \key d \minor
+  \time 4/4
+  R1*2 |
+  \time 6/4
+  \quoteDuring #"cello" {
+    s1.*2 |
+  }
 }
 
 \addQuote "bassoon2" { \bassoonIINotes }

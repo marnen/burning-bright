@@ -37,6 +37,7 @@ bassoonINotes = {
   \time 3/2
   R1. |
   \relative c, {
+    \partcombineSoloIOnce
     \time 4/4
     r8 cs(\p d e~ e2) |
     \time 3/2
