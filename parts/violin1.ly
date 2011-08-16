@@ -55,8 +55,35 @@ violinINotes = {
   >>
   \bar "||"
   \key c \minor
+  <<
+    {
+      \repeat unfold 9 {
+        \relative d' {
+          r8 d( g! d) r8 d( g d)
+        }
+      }
+    }
+    {
+      \time 4/4 s1*2
+      % p. 5
+      \time 3/2 s1.
+      \time 4/4 s1
+    }
+  >>
+  \time 3/2
   \relative d' {
-    r8 d( g! d) r8 d( g d)
+    \repeat unfold 2 { r8 d( c'! d,) } r g='( f' g,) |
+    % p. 6
+    \time 4/4
+    <<
+      { \repeat unfold 4 { r8 e'=''( a, e') } }
+      { s1 | s8 s\< s s s s s s\! | }
+    >>
+  }
+  \time 6/4
+  \relative a {
+    r8 a(\mf bf d ef g) r g( a bf d ef) |
+    r8 a,='(\< bf d ef g)\! bf(\> a g ef d bf)\! |
   }
 }
 
