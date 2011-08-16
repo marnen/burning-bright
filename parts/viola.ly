@@ -45,6 +45,33 @@ violaNotes = {
   \bar "||"
   \key c \minor
   c4 r r2 |
+  % p. 5
+  R1 |
+  \time 3/2
+  R1. |
+  \time 4/4
+  R1 |
+  \time 3/2
+  \relative c' {
+    <<
+      {
+        \repeat unfold 3 { r8 cs( d cs) } |
+        % p. 6
+        \repeat unfold 4 { r8 e( a e) } |
+        \repeat unfold 3 { r8 a,=( bf d ef g) }
+      }
+      {
+        \time 3/2
+        s8 s\mp s4 s1 |
+        \time 4/4
+        s1 | s8 s\< s s s s s s\! |
+        \time 6/4
+        s8 s\mf s2 s2. |
+        s8 s\< s s s s\!
+      }
+    >>
+    bf='(\> a g ef d bf)\! |
+  }
 }
 
 \addQuote "viola" { \violaNotes }
