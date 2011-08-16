@@ -49,16 +49,14 @@ violinIINotes = {
       }
       \repeat unfold 7 {
         \relative g'' {
-          r8 g!( f d b gs=')
+          r8 g!( f d b gs!=')
         }
       }
     }
   >>
   \bar "||"
   \key c \minor
-  \repeat unfold 2 {
-    r8 c'([ g' c'])]
-  }
+  r8 c'([ g'! c'])] r8 c'([ g' c'])]
 }
 
 \addQuote "violin2" { \violinIINotes }

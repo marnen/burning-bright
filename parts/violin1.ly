@@ -55,10 +55,8 @@ violinINotes = {
   >>
   \bar "||"
   \key c \minor
-  \repeat unfold 2 {
-    \relative d' {
-      r8 d( g d)
-    }
+  \relative d' {
+    r8 d( g! d) r8 d( g d)
   }
 }
 
