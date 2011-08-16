@@ -42,3 +42,4 @@ voiceNotes = {
 }
 
 \addQuote "voice" { \voiceNotes }
+\addQuote "voice_u" { \transpose c c' \voiceNotes }

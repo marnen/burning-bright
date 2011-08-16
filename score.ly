@@ -12,6 +12,7 @@
 
 \include "english.ly"
 \include "parts/piccolo.ly"
+\include "parts/flute1.ly"
 \include "parts/oboe1.ly"
 \include "parts/oboe2.ly"
 \include "parts/clarinet1.ly"
@@ -26,7 +27,7 @@
 \include "parts/contrabass.ly" 
 
 staffPiccolo = \new Staff {
-	\time 4/4
+	\tempo 4 = 132
 	\set Staff.instrumentName = "Piccolo"
 	\set Staff.shortInstrumentName = "Picc."
 	\set Staff.midiInstrument = "piccolo"
@@ -36,14 +37,7 @@ staffFlutes = \new Staff {
 	\set Staff.instrumentName = "2 Flutes"
 	\set Staff.shortInstrumentName = "Fls."
 	\set Staff.midiInstrument = "flute"
-	\key c \minor
-	\clef treble
-	\relative c' { 	
- % Type notes here 
-
-	\bar "|."
-	}
-
+	\fluteINotes
 }
 staffOboes = \new Staff {
 	\set Staff.instrumentName = "2 Oboes"
@@ -214,7 +208,6 @@ staffContrabass = \new Staff {
 
 \score {
 	<<
-	  \tempo 4 = 132
 	  \new StaffGroup << 
 	    \new GrandStaff <<
         \staffPiccolo
