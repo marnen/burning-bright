@@ -22,6 +22,7 @@
 
 \include "parts/horn1.ly"
 \include "parts/horn2.ly"
+\include "parts/horn3.ly"
 
 \include "parts/voice.ly"
 \include "parts/violin1.ly"
@@ -77,14 +78,7 @@ staffHornsIIInIV = \new Staff {
 	\set Staff.shortInstrumentName = \markup { \column { 3 4 } }
 	\set Staff.midiInstrument = "french horn"
 	\transposition f
-	\key c \minor
-	\clef treble
-	\relative c' { 	
- % Type notes here 
-
-	\bar "|."
-	}
-
+	\hornIIINotes
 }
 staffTrumpets = \new Staff {
 	\set Staff.instrumentName = "3 Trumpets in C"
