@@ -20,6 +20,7 @@ fluteINotes = {
   % p. 3
   \time 4/4
   R1 |
+  \key a \minor
   \time 6/4
   R1. |
   % p. 4

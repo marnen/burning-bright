@@ -107,7 +107,7 @@ staffTenorTrombones = \new Staff {
   \set Staff.soloText = "1."
   \set Staff.soloIIText = "2."
 	\key c \minor
-	\clef bass
+	\clef tenor
 	\relative c' { 	
  % Type notes here 
 
