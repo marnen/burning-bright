@@ -12,6 +12,7 @@
 
 \include "english.ly"
 \include "parts/piccolo.ly"
+\include "parts/clarinet1.ly"
 \include "parts/bassoon1.ly"
 \include "parts/bassoon2.ly"
 \include "parts/voice.ly"
@@ -45,15 +46,8 @@ staffClarinets = \new Staff {
 	\set Staff.instrumentName = \markup { \concat { "2 Clarinets in B" \smaller \flat } }
 	\set Staff.shortInstrumentName = \markup { \concat { "Cls. (B" \smaller \flat \larger ")" } }
 	\set Staff.midiInstrument = "clarinet"
-	\transposition bf,
-	\key c \minor
-	\clef treble
-	\relative c' { 	
- % Type notes here 
-
-	\bar "|."
-	}
-
+	\transposition bf
+	\partcombine \clarinetINotes { }
 }
 staffOboes = \new Staff {
 	\set Staff.instrumentName = "2 Oboes"
