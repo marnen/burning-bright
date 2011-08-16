@@ -21,6 +21,7 @@
 \include "parts/bassoon2.ly"
 
 \include "parts/horn1.ly"
+\include "parts/horn2.ly"
 
 \include "parts/voice.ly"
 \include "parts/violin1.ly"
@@ -69,7 +70,7 @@ staffHornsInII = \new Staff {
 	\set Staff.shortInstrumentName = \markup { \column { 1 2 } }
 	\set Staff.midiInstrument = "french horn"
 	\transposition f
-	\hornINotes
+	\partcombine \hornINotes \hornIINotes
 }
 staffHornsIIInIV = \new Staff {
 	\set Staff.instrumentName = \markup { \column { 3 4 } }
