@@ -27,6 +27,8 @@
 \include "parts/trumpet1.ly"
 \include "parts/bass_trombone.ly"
 
+\include "parts/percussion.ly"
+
 \include "parts/voice.ly"
 \include "parts/violin1.ly"
 \include "parts/violin2.ly"
@@ -139,6 +141,7 @@ staffGlockenspiel = \new Staff {
 staffPercussion = \new DrumStaff {
   \set DrumStaff.instrumentName = "Percussion"
   \set DrumStaff.shortInstrumentName = "Perc."
+  \percussionNotes
 }
 staffHarp = \new PianoStaff {
 	\set PianoStaff.midiInstrument = #"harp"
