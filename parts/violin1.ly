@@ -43,7 +43,7 @@ violinINotes = {
       s1.*2 |
       % p. 4
       s8 s\> s2 s s8 s\! |
-      s1.\mp
+      s8 s\mp
     }
     {
       \repeat unfold 8 {
