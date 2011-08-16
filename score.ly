@@ -13,6 +13,7 @@
 \include "english.ly"
 \include "parts/piccolo.ly"
 \include "parts/flute1.ly"
+\include "parts/flute2.ly"
 \include "parts/oboe1.ly"
 \include "parts/oboe2.ly"
 \include "parts/clarinet1.ly"
@@ -49,7 +50,7 @@ staffFlutes = \new Staff {
 	\set Staff.midiInstrument = "flute"
   \set Staff.soloText = "1."
   \set Staff.soloIIText = "2."
-	\fluteINotes
+	\partcombine \fluteINotes \fluteIINotes
 }
 staffOboes = \new Staff {
 	\set Staff.instrumentName = "2 Oboes"
