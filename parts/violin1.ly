@@ -59,7 +59,7 @@ violinINotes = {
     {
       \repeat unfold 9 {
         \relative d' {
-          r8 d( g! d) r8 d( g d)
+          r8 d( g! d)
         }
       }
     }
@@ -74,6 +74,7 @@ violinINotes = {
   \relative d' {
     \repeat unfold 2 { r8 d( c'! d,) } r g='( f' g,) |
     % p. 6
+    \key d \minor
     \time 4/4
     <<
       { \repeat unfold 4 { r8 e'=''( a, e') } }
