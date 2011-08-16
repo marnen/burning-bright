@@ -19,6 +19,9 @@
 \include "parts/clarinet2.ly"
 \include "parts/bassoon1.ly"
 \include "parts/bassoon2.ly"
+
+\include "parts/horn1.ly"
+
 \include "parts/voice.ly"
 \include "parts/violin1.ly"
 \include "parts/violin2.ly"
@@ -60,25 +63,19 @@ staffBassoons = \new Staff {
 	\set Staff.midiInstrument = "bassoon"
 	\partcombine \bassoonINotes \bassoonIINotes
 }
+
 staffHornsInII = \new Staff {
 	\set Staff.instrumentName = \markup { \column { 1 2 } }
 	\set Staff.shortInstrumentName = \markup { \column { 1 2 } }
 	\set Staff.midiInstrument = "french horn"
-	\transposition f,
-	\key c \minor
-	\clef treble
-	\relative c' { 	
- % Type notes here 
-
-	\bar "|."
-	}
-
+	\transposition f
+	\hornINotes
 }
 staffHornsIIInIV = \new Staff {
 	\set Staff.instrumentName = \markup { \column { 3 4 } }
 	\set Staff.shortInstrumentName = \markup { \column { 3 4 } }
 	\set Staff.midiInstrument = "french horn"
-	\transposition f,
+	\transposition f
 	\key c \minor
 	\clef treble
 	\relative c' { 	
