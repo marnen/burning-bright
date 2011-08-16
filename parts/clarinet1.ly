@@ -32,4 +32,4 @@ clarinetINotes = {
   }
 }
 
-\addQuote "piccolo" { \piccoloNotes }
+\addQuote "clarinet1" { \clarinetINotes }
