@@ -27,7 +27,21 @@ oboeIINotes = {
   % p. 4
   \time 4/4
   \key c \minor
+  R1*2 |
+  % p. 5
+  \time 3/2
+  R1. |
+  \time 4/4
   R1 |
+  \time 3/2
+  R1. |
+  % p. 6
+  \key d \minor
+  \time 4/4
+  R1*2 |
+  \time 6/4
+  R1. |
+  \quoteDuring #"flute2" { s4 s2\mf s2. } |
 }
 
 \addQuote "oboe2" { \oboeIINotes }
