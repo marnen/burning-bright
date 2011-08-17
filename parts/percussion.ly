@@ -49,6 +49,6 @@ percussionNotes = {
     \time 4/4
     R1*2 |
     <bd cymc>2\mf r4 r2 r4 |
-    <bd cymc> r4 r2 r4 |
+    <bd cymc>2 r4 r2 r4 |
   }
 }
