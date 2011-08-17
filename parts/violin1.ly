@@ -75,10 +75,8 @@ violinINotes = {
     % p. 6
     \key d \minor
     \time 4/4
-    <<
-      { \repeat unfold 4 { r8 e'=''( a, e') } }
-      { s1 | s8 s\< s s s s s s\! | }
-    >>
+    \repeat unfold 2 { r8 e'=''( a, e') }
+    r e!=''(\< a, e') r e( a, e')\! |
   }
   \time 6/4
   \relative a {

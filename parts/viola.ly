@@ -58,7 +58,8 @@ violaNotes = {
         \repeat unfold 3 { r8 cs( d cs) } |
         % p. 6
         \key d \minor
-        \repeat unfold 4 { r8 e( a e) } |
+        \repeat unfold 2 { r8 e( a e) } |
+        r e!( a e) r e( a e) |
         \repeat unfold 3 { r8 a,=( bf d ef g) }
       }
       {
