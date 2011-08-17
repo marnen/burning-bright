@@ -31,4 +31,21 @@ contrabassNotes = {
     s2
   }
   r2 |
+  % p. 5
+  R1 |
+  \time 3/2
+  R1. |
+  \time 4/4
+  R1 |
+  \time 3/2
+  R1. |
+  % p. 6
+  \key d \minor
+  \time 4/4
+  R1 |
+  \quoteDuring #"cello_d" {
+    s1\mp |
+    \time 6/4
+    \repeat unfold 2 { s2. \parenthesize ef,2 s4 | }
+  }
 }
