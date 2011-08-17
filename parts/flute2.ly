@@ -3,6 +3,7 @@
 
 fluteIINotes = {
   % Orchestration p. 1
+  \clef treble
   \key c \minor
   \time 4/4
   R1*2 |
