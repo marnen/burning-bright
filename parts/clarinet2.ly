@@ -3,7 +3,7 @@
 \include "violin2.ly"
 
 clarinetIINotes = {
-  \transpose bf, c' {
+  \transpose bf c' {
     % Orchestration p. 1
     \clef treble
     \key c \minor
