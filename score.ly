@@ -26,6 +26,7 @@
 \include "parts/horn3.ly"
 \include "parts/horn4.ly"
 \include "parts/trumpet1.ly"
+\include "parts/tenor_trombone1.ly"
 \include "parts/bass_trombone.ly"
 
 \include "parts/percussion.ly"
@@ -110,14 +111,7 @@ staffTenorTrombones = \new Staff {
 	\set Staff.midiInstrument = "trombone"
   \set Staff.soloText = "1."
   \set Staff.soloIIText = "2."
-	\key c \minor
-	\clef tenor
-	\relative c' { 	
- % Type notes here 
-
-	\bar "|."
-	}
-
+  \tenorTromboneINotes
 }
 staffBassTrombone = \new Staff {
 	\set Staff.instrumentName = "Bass Trombone"
