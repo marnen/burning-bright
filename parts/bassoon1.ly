@@ -49,7 +49,7 @@ bassoonINotes = {
     r2 r8 ef(\< df c~\! |
     \time 6/4
     c4)\mf r r d cs g~ |
-    g=,8 d' ef d c! g' d( ef f g bf c) |
+    g=,8 d'\< ef d c! g' d( ef f g bf c)\! |
   }
 }
 
