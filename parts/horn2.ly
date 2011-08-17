@@ -42,7 +42,21 @@ hornIINotes = {
     \bar "||"
     % p. 4
     \time 4/4
+    R1*2 |
+    % p. 5
+    \time 3/2
+    R1. |
+    \time 4/4
     R1 |
+    \time 3/2
+    R1. |
+    % p. 6
+    \time 4/4
+    R1*2 |
+    \relative b {
+      r4 bf2\mp r4 d2 |
+      r4 ef2\< g a4\! |
+    }
   }
 }
 
