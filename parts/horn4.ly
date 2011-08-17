@@ -33,7 +33,21 @@ hornIVNotes = {
     \bar "||"
     % p. 4
     \time 4/4
+    R1*2 |
+    % p. 5
+    \time 3/2
+    R1. |
+    \time 4/4
     R1 |
+    \time 3/2
+    R1. |
+    % p. 6
+    \time 4/4
+    R1*2 |
+    \relative a {
+      r4 a2\mp r4 bf2 |
+      r4 d2\< ef\! r4 |
+    }
   }
 }
 
