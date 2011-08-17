@@ -37,5 +37,18 @@ percussionNotes = {
         bd4 r4 r2 |
       }
     >>
+    % p. 5
+    R1 |
+    \time 3/2
+    R1. |
+    \time 4/4
+    R1 |
+    \time 3/2
+    R1. |
+    % p. 6
+    \time 4/4
+    R1*2 |
+    <bd cymc>2\mf r4 r2 r4 |
+    <bd cymc> r4 r2 r4 |
   }
 }
