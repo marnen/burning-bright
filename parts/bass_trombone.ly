@@ -1,5 +1,6 @@
 \version "2.14.2"
 \include "english.ly"
+\include "cello.ly"
 
 bassTromboneNotes = {
   % Orchestration p. 1
@@ -27,7 +28,22 @@ bassTromboneNotes = {
     R1. \bar "||"
     \key c \minor
     \time 4/4
+    R1*2 |
+    % p. 5
+    \time 3/2
+    R1. |
+    \time 4/4
     R1 |
+    \time 3/2
+    R1. |
+    % p. 6
+    \key d \minor
+    \time 4/4
+    R1*2 |
+    \time 6/4
+    \set Staff.quotedEventTypes = #'(note-event rest-event)
+    \quoteDuring #"cello" { s1._\markup { \dynamic mp \italic pesante } | s1. | }
+    \set Staff.quotedEventTypes = #'(note-event rest-event tie-event beam-event tuplet-span-event)
   }
 }
 
