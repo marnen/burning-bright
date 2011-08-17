@@ -28,7 +28,23 @@ clarinetINotes = {
     % p. 4
     \time 4/4
     \key c \minor
+    R1*2 |
+    % p. 5
+    \time 3/2
+    R1. |
+    \time 4/4
     R1 |
+    \time 3/2
+    R1. |
+    % p. 6
+    \key d \minor
+    \time 4/4
+    R1*2 |
+    \time 6/4
+    \relative b {
+      r4 bf(\mf d) r d( ef) |
+      r g='(\< a) bf( d ef)\! |
+    }
   }
 }
 
