@@ -55,7 +55,7 @@ hornINotes = {
     R1*2 |
     \relative e' {
       r4 ef2\mp r4 g2 |
-      r4 a2\< bf2 d4\! |
+      r4 a2\< bf d4\! |
     }
   }
 }

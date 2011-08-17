@@ -42,7 +42,21 @@ hornIIINotes = {
     \bar "||"
     % p. 4
     \time 4/4
+    R1*2 |
+    % p. 5
+    \time 3/2
+    R1. |
+    \time 4/4
     R1 |
+    \time 3/2
+    R1. |
+    % p. 6
+    \time 4/4
+    R1*2 |
+    \relative d' {
+      r4 d2\mp r4 ef2 |
+      r4 g2\< a bf4\! |
+    }
   }
 }
 
