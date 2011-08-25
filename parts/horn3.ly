@@ -78,7 +78,7 @@ hornIIINotes = {
     R1.*2 |
     \relative f' {
       f1.(_\markup { \dynamic pp \italic legato }^\ord |
-      fs2.~ fs4 ef! f |
+      fs2.~ fs4 ef! f) |
       % p. 10
       g2.( b4 g f) |
       g\< b2 c4 cs2\! \bar "||"
