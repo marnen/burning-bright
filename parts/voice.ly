@@ -53,6 +53,30 @@ voiceNotes = {
       \time 6/4
       c8 bf a=4 r r c! d |
       ef4. d8 c4 r ef2 |
+      % p. 7
+      \time 4/4
+      d4 r r2 |
+      \times 2/3 { c='4 b c } d r |
+      r8 c d e~ e4 d |
+      c d a g! |
+      % p. 8
+      r e= a d |
+      \time 3/2
+      c f bf,=2 r |
+      \time 5/4
+      r a4 bf8 d,=4. \bar "||"
+      \key ef \major
+      \time 6/4
+      af=,2 r4 r2 r4 |
+      % p. 9
+      r2 r4 c=\mp c d |
+      ef4. d8 c d ef4 c! r8 ef |
+      f2 r4 r8 ef d4 ef |
+      fs2 d ef4 f |
+      % p. 10
+      g=8 ef f4. g8 b4 g f |
+      g\< b g c=' cs2\! \bar "||"
+      r4 d2\f \glissando g, r4 |
     }
   }
 }
