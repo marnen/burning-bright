@@ -1,7 +1,8 @@
 \version "2.14.2"
 \include "english.ly"
+\include "../globals.ly"
 
-timeKeyTrack = {
+timeTrack = {
   % Orchestration p. 1
   \tempo 4 = 126
   \time 4/4
@@ -47,10 +48,50 @@ timeKeyTrack = {
   \time 6/4
   s1.*7 \bar "||"
   % p. 10
-  \s1.*5 |
+  s1.*5 |
 }
 
 harpRHNotes = {
+  % p. 1
+  \clef treble
+  \key c \minor
+  R1*2 | R1. | R1 |
+  % p. 2
+  R1.*4 |
+  % p. 3
+  R1 |
+  \key a \minor
+  R1.*4 |
+  % p. 4
+  \key c \minor
+  R1*2 |
+  % p. 5
+  R1. | R1 | R1. |
+  % p. 6
+  \key d \minor
+  R1*2 | R1.*2 |
+  % p. 7
+  R1*5 |
+  % p. 8
+  R1. | R1*5/4 |
+  \key ef \major
+  <<
+    {
+      \repeat unfold 6 { <ef af>2. \glissando <f'' bf''> \glissando | }
+      % p. 10
+      \voiceOne <ef af>2.\< \glissando <f'' bf''> | \voiceTwo d''2\!\f
+    }
+    \new Voice {
+      s2.\p\< s\!\mf\> |
+      s1.*5\!_\sim |
+      % p. 10
+      \voiceTwo s2. <d' g'>2. \glissando |
+      \voiceOne <g'' d'''>2
+    }
+  >>
+  \oneVoice r4 r2 r4 |
+  % p. 11
+  R1.*4 |
 }
 
 harpLHNotes = {
@@ -58,7 +99,10 @@ harpLHNotes = {
 
 harpNotes = <<
   \context Staff = "RH" {  % Right hand 
-    \harpRHNotes
+    <<
+      \timeTrack
+      \harpRHNotes
+    >>
   }
   \context Staff = "LH" {  % Left hand 			
     \harpLHNotes
