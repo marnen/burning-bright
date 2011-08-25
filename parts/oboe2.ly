@@ -41,7 +41,28 @@ oboeIINotes = {
   R1*2 |
   \time 6/4
   R1. |
-  \quoteDuring #"flute2" { s4 s2\mf s2. } |
+  \quoteDuring #"flute2" { s4 s2\mf s2. | \time 4/4 s1 } |
+  % p. 7
+  \relative d' {
+    d1~\p | d~ | d |
+    % p. 8
+    d~ |
+    \time 3/2
+    d1.~ |
+    \time 5/4
+    d1 r4 \bar "||"
+  }
+  \key ef \major
+  \time 6/4
+  R1.*6
+  % p. 10
+  \relative d'' {
+    r2 r4 << { d2. } { s2\< \times 2/3 { s8 s s\! } } >> \bar "||"
+    <<
+      { \repeat unfold 5 { r4 d2 r4 cs2 | } }
+      { s4 s\f }
+    >>
+  }
 }
 
 \addQuote "oboe2" { \oboeIINotes }

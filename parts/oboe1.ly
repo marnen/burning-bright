@@ -58,7 +58,9 @@ oboeINotes = {
     r4 bf(\mf\< d) ef( g a)\! |
     % p. 7
     \time 4/4
+    \partcombineApart
     d,=''\f r r2 |
+    \partcombineAutomatic
     d1~\p | d~ | d |
     % p. 8
     d~ |
