@@ -77,6 +77,10 @@ voiceNotes = {
       g=8 ef f4. g8 b4 g f |
       g\< b g c=' cs2\! \bar "||"
       r4 d2\f \glissando g, r4 |
+      r4 d'2 cs8 g d'4 cs |
+      g=2. r4 d'2 |
+      cs4 g d' cs g8 d' cs4 |
+      g= e'2 ef4 d a |
     }
   }
 }
