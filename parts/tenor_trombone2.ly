@@ -41,7 +41,22 @@ tenorTromboneIINotes = {
   \relative a {
     r4 a2\mp r4 a2 |
     r4 a2\< a a4\! |
+    d,=\mf r r2 |
   }
+  R1*4 |
+  % p. 8
+  \time 3/2
+  R1. |
+  \time 5/4
+  R1*5/4 \bar "||"
+  \key ef \major
+  \time 6/4
+  R1.*7 \bar "||"
+  % p. 10
+  <<
+    { \repeat unfold 5 { r4 d'( \glissando af8) r r2 r4 | } }
+    { s4 s\f }
+  >>
 }
 
 \addQuote "tenor_trombone2" { \tenorTromboneIINotes }
