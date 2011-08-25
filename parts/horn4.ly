@@ -1,5 +1,6 @@
 \version "2.14.2"
 \include "english.ly"
+\include "../globals.ly"
 
 hornIVNotes = {
   \transpose f c' {
@@ -47,6 +48,36 @@ hornIVNotes = {
     \relative a {
       r4 a2\mp r4 bf2 |
       r4 d2\< ef\! r4 |
+    }
+    <<
+      { \repeat unfold 15 { d4( gs8) r } }
+      { 
+        s1\mf^\bellUp | s1*4 |
+        % p. 8
+        \time 3/2
+        s1.
+        \time 5/4
+        s1
+      }
+    >>
+    d4( \bar "||"
+    \time 6/4
+    af8) r r4 r r2 r4 |
+    % p. 9
+    \clef bass
+    \relative a, {
+      <<
+        { af2.( f) }
+        { s2.\pp\<^\ord s2\mp\> s8 s\! }
+      >> |
+      R1.
+      <<
+        { \repeat unfold 4 { af2.( f) } }
+        { s1._\sim | s1.*2 | s1\< s4 s8 s\! }
+      >>
+      \bar "||"
+      g=,2\f r4 r2 r4 |
+      R1.*4 |
     }
   }
 }
