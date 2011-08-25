@@ -41,6 +41,37 @@ fluteIINotes = {
   \relative d' {
     r4 d\mf( ef) r ef( g) |
     r a='(\< bf) d( ef g)\! |
+    % p. 7
+    \time 4/4
+    a=''\f r r2 |
+    a1\p~ | a~ | a |
+    % p. 8
+    a~ |
+    \time 3/2
+    a1.~ |
+    \time 5/4
+    a1 r4 \bar "||"
+  }
+  \key ef \major
+  \time 6/4
+  \relative a' {
+    <<
+      {
+        \repeat unfold 6 {
+          af8( bf c ef f af) bf( af f ef c bf) |
+        }
+      }
+      {
+        s8\p\< s s s s s\! s\mf\> s s s s s\! |
+        s_\markup { \italic sim. }
+      }
+    >>
+    % p. 10
+    af='8(\< bf c ef f af) c,( ef \times 2/3 { f[ af bf] } \times 2/3 { b[ c cs])\! } \bar "||"
+    <<
+      { \repeat unfold 5 { r4 \times 2/3 { d='''8( cs c } b16 bf a af g4) r r | } }
+      { s4 s\f }
+    >>
   }
 }
 
