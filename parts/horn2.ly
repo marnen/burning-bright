@@ -56,7 +56,18 @@ hornIINotes = {
     \relative b {
       r4 bf2\mp r4 d2 |
       r4 ef2\< g a4\! |
+      d,='\f r r2
     }
+    R1*4 |
+    % p. 8
+    \time 3/2
+    R1. |
+    \time 5/4
+    R1*5/4 \bar "||"
+    \time 6/4
+    R1.*7 \bar "||"
+    % p. 10
+    R1.*5 |
   }
 }
 
