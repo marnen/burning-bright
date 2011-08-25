@@ -82,3 +82,4 @@ fluteINotes = {
 }
 
 \addQuote "flute1" { \fluteINotes }
+\addQuote "flute1_d" { \transpose c' c \fluteINotes }

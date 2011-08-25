@@ -1,5 +1,6 @@
 \version "2.14.2"
 \include "english.ly"
+\include "flute1.ly"
 \include "violin1.ly"
 
 clarinetINotes = {
@@ -44,7 +45,30 @@ clarinetINotes = {
     \relative b {
       r4 bf(\mf d) r d( ef) |
       r g='(\< a) bf( d ef)\! |
+      % p. 7
+      \time 4/4
+      d'\f r r2 |
     }
+    \relative a' {
+      a1~\p | a~ | a |
+      % p. 8
+      a~
+      \time 3/2
+      a1.~ |
+      \time 5/4
+      a1 r4 \bar "||"
+    }
+    \key ef \major
+    \relative b {
+      \time 6/4
+      <<
+        { \repeat unfold 6 { ef8( f g bf c ef) f( ef c bf g f) | } }
+        { s2\p\< s8 s\! s2\mf\> s8 s\! | s_\markup { \italic sim. } }
+      >>
+      % p. 10
+      ef='8(\< f g bf c ef) g,( bf \times 2/3 { c[ ef f] } \times 2/3 { fs[ g af])\! } \bar "||"
+    }
+    \quoteDuring #"flute1_d" { s1.*5 | }
   }
 }
 
