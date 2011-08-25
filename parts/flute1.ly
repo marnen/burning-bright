@@ -47,6 +47,37 @@ fluteINotes = {
   \relative e' {
     r4 ef\mf( g) r a( bf) |
     r d=''(\< ef) g( a bf)\! |
+    % p. 7
+    \time 4/4
+    d='''\f r r2 |
+    d1~\p | d1~ | d1 |
+    % p. 8
+    d1~ |
+    \time 3/2
+    d1.~ |
+    \time 5/4
+    d1 r4 \bar "||"
+  }
+  \key ef \major
+  \time 6/4
+  R1.*3 |
+  \relative d'' {
+    % p. 9
+    r4 d8\p( ef d c g' d4.) r4 |
+    R1. |
+    % p. 10
+    r2 r4 g=''8 ef! f4. g8 |
+  }
+  \relative f''' {
+    r2 r4 << { f2. } { s2\< s8 s\! } >> \bar "||"
+    <<
+      { 
+        \repeat unfold 5 { r4 \times 2/3 { g8([ fs f] } \times 2/3 { e[ ef d] } cs4) r r }
+      }
+      {
+        s4 s\f
+      }
+    >>
   }
 }
 
