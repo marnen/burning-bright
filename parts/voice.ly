@@ -2,7 +2,7 @@
 \include "english.ly"
 
 verse = \lyricmode {
-  But re -- mem -- ber -- ing— re -- mem -- ber -- ing the pain— it’s like look -- ing last in a cof -- fin— there it is. The face is dead and you can for -- get it. But if you do not look, the face is nev -- er dead and you can -- not in your back mind say good -- by. And so I am look -- ing back at the sad -- ness so deep dug in. The top mind de -- nies ste -- ril -- i -- ty. I re -- mem -- ber how it was.
+  But re -- mem -- ber -- ing— re -- mem -- ber -- ing the pain— it’s like look -- ing last in a cof -- fin— there it is. The face is dead and you can for -- get it. But if you do not look, the face is nev -- er dead and you can -- not in your back mind say good -- by. And so I am look -- ing back at the sad -- ness so deep dug in. The top mind de -- nies ste -- ril -- i -- ty. I re -- mem -- ber how it was. Be -- ing con -- vinced, I de -- nied __ the des -- o -- la -- tion or made a joke of it, a bit -- ter joke. I can re -- mem -- ber on -- ly vague -- ly the slow, sus -- pi -- cious hat -- red that can grow and flower be -- tween man and wo -- man while they say, “Not now. We can’t af -- ford a child. We don’t want a child if we can’t take per -- fect care of
 }
 
 voiceNotes = {
