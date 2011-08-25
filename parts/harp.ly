@@ -139,6 +139,7 @@ harpLHNotes = {
 
 harpNotes = <<
   \context Staff = "RH" {  % Right hand 
+    \override Glissando #'breakable = ##t
     <<
       \timeTrack
       \harpRHNotes
