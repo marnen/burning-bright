@@ -48,7 +48,30 @@ celloNotes = {
     ef\< r gs= r\! |
     \time 6/4
     a,=,2_\markup { \dynamic mf \italic pesante } r4 ef2 r4 |
-    a2 r4 ef2 r4 |
+    a2\< r4 ef2 r4\! |
+    % p. 7
+    \time 4/4
+    <d d'>\f^\div r d=,\mf^\unis r |
+    << 
+      { \repeat unfold 13 { d4 r } }
+      { s1*4 | \time 3/2 s1. | \time 5/4 s1 }
+    >>
+    % p. 8
+    r4 \bar "||"
+  }
+  \key ef \major
+  \time 6/4
+  <<
+    { \repeat unfold 6 { af2.( f) | } }
+    { s2\p\< s8 s\! s2\mf\> s8 s\! | s_\markup { \italic sim. } }
+  >>
+  % p. 10
+  \relative a {
+    af2.\< f8( ef d c bf af)\! \bar "||"
+    << 
+      { \repeat unfold 5 { g=,2 r4 cs,2 r4 | } }
+      { s4\f }
+    >>
   }
 }
 
