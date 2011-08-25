@@ -145,9 +145,6 @@ harpNotes = <<
     >>
   }
   \context Staff = "LH" {  % Left hand
-    <<
-      \harpLHNotes
-    >>
+    \harpLHNotes
   }
 >>
-
