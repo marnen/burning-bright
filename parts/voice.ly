@@ -67,7 +67,7 @@ voiceNotes = {
       r a4 bf8 d,=4. \bar "||"
       \key ef \major
       \time 6/4
-      af=,2 r4 r2 r4 |
+      af!=,2 r4 r2 r4 |
       % p. 9
       r2 r4 c=\mp c d |
       ef4. d8 c d ef4 c! r8 ef |

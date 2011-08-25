@@ -55,14 +55,14 @@ fluteIINotes = {
   \key ef \major
   \time 6/4
   \relative a' {
+    af!8(\p\< bf c ef f af)\! bf(\mf\> af f ef c bf)\! |
     <<
       {
-        \repeat unfold 6 {
+        \repeat unfold 5 {
           af8( bf c ef f af) bf( af f ef c bf) |
         }
       }
       {
-        s8\p\< s s s s s\! s\mf\> s s s s s\! |
         s_\markup { \italic sim. }
       }
     >>
