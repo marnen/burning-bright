@@ -78,3 +78,4 @@ bassoonINotes = {
 }
 
 \addQuote "bassoon1" { \bassoonINotes }
+\addQuote "bassoon1_d" { \transpose c' c \bassoonINotes }

@@ -4,8 +4,6 @@
 \include "cello.ly"
 \include "contrabass.ly"
 
-\addQuote "bassoon1_d" { \transpose c' c \bassoonINotes }
-
 bassoonIINotes = {
   % Orchestration p. 1
   \clef bass

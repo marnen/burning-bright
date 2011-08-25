@@ -1,5 +1,6 @@
 \version "2.14.2"
 \include "english.ly"
+\include "bassoon1.ly"
 \include "cello.ly"
 
 bassTromboneNotes = {
@@ -25,25 +26,47 @@ bassTromboneNotes = {
     \repeat unfold 2 { ef4 r g!~ g r ef4~ | }
     % p. 4
     ef r r r2 r4 |
-    R1. \bar "||"
-    \key c \minor
-    \time 4/4
-    R1*2 |
-    % p. 5
+}
+  R1. \bar "||"
+  \key c \minor
+  \time 4/4
+  R1*2 |
+  % p. 5
+  \time 3/2
+  R1. |
+  \time 4/4
+  R1 |
+  \time 3/2
+  R1. |
+  % p. 6
+  \key d \minor
+  \time 4/4
+  R1*2 |
+  \time 6/4
+  \set Staff.quotedEventTypes = #'(note-event rest-event)
+  \quoteDuring #"cello" { s1._\markup { \dynamic mp \italic pesante } | s1. | }
+  \set Staff.quotedEventTypes = #'(note-event rest-event tie-event beam-event tuplet-span-event articulation-event dynamic-event)
+  % p. 7
+  \time 4/4
+  d,4\mf r d,\mp r |
+  \quoteDuring #"cello" {
+    s1*4 |
+    % p. 8
     \time 3/2
-    R1. |
-    \time 4/4
-    R1 |
-    \time 3/2
-    R1. |
-    % p. 6
-    \key d \minor
-    \time 4/4
-    R1*2 |
-    \time 6/4
-    \set Staff.quotedEventTypes = #'(note-event rest-event)
-    \quoteDuring #"cello" { s1._\markup { \dynamic mp \italic pesante } | s1. | }
-    \set Staff.quotedEventTypes = #'(note-event rest-event tie-event beam-event tuplet-span-event)
+    s1. |
+    \time 5/4
+    s1
+  }
+  d,4( \bar "||"
+  \key ef \major
+  \time 6/4
+  af,) r r r2 r4 |
+  % p. 9
+  R1.*5 |
+  % p. 10
+  \quoteDuring #"bassoon1_d" {
+    s1. \bar "||"
+    s1.*5 |
   }
 }
 
