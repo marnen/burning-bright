@@ -1,6 +1,10 @@
 \version "2.14.2"
 \include "english.ly"
 \include "bassoon1.ly"
+\include "cello.ly"
+\include "contrabass.ly"
+
+\addQuote "bassoon1_d" { \transpose c' c \bassoonINotes }
 
 bassoonIINotes = {
   % Orchestration p. 1
@@ -48,6 +52,20 @@ bassoonIINotes = {
   \quoteDuring #"cello" {
     s1.*2 |
   }
+  % p. 7
+  \time 4/4
+  d,4\f r d,\mf r |
+  \quoteDuring #"cello" { 
+    s1*4 |
+    % p. 8
+    \time 3/2 s1. | \time 5/4 s1
+  } d,4 \bar "||"
+  \key ef \major
+  \time 6/4
+  \quoteDuring #"cello_d" { s1.*3 } |
+  % p. 9
+  R1. |
+  \quoteDuring #"bassoon1_d" { s1.*8 } |
 }
 
 \addQuote "bassoon2" { \bassoonIINotes }
