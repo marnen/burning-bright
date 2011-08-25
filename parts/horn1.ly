@@ -1,5 +1,6 @@
 \version "2.14.2"
 \include "english.ly"
+\include "voice.ly"
 
 hornINotes = {
   \transpose f c' {
@@ -56,7 +57,19 @@ hornINotes = {
     \relative e' {
       r4 ef2\mp r4 g2 |
       r4 a2\< bf d4\! |
+      % p. 7
+      d=''\f r r2 |
     }
+    R1*4 |
+    % p. 8
+    \time 3/2
+    R1. |
+    \time 5/4
+    R1*5/4 \bar "||"
+    \time 6/4
+    R1.*7 \bar "||"
+    % p. 10
+    \quoteDuring #"voice_u" { s1.*5 } |
   }
 }
 
