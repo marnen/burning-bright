@@ -2,6 +2,14 @@
 \include "english.ly"
 \include "../globals.ly"
 
+% \pedalChange {G \flat}
+#(
+  define-markup-command (pedalChange layout props pedaling) (markup-list?)
+  (interpret-markup layout props
+    (markup (make-concat-markup (map #'make-vcenter-markup pedaling)))
+  )
+)
+
 timeTrack = {
   % Orchestration p. 1
   \tempo 4 = 126
@@ -82,10 +90,10 @@ harpRHNotes = {
       \voiceOne <ef af>2.\< \glissando <f'' bf''> | \voiceTwo d''2\!\f
     }
     \new Voice {
-      s2.\p\< s\!\mf\> |
+      s2.\p\<_\markup { \harp-pedal #"v-^|^-v^" } s\!\mf\> |
       s1.*5\!_\sim |
       % p. 10
-      \voiceTwo s2. <d' g'>2. \glissando |
+      \voiceTwo s2. <d' g'>2._\markup \column { \pedalChange { D \natural } \pedalChange { G \natural } } \glissando |
       \voiceOne <g'' d'''>2
     }
   >>
@@ -121,8 +129,11 @@ harpLHNotes = {
   R1.*7 |
   % p. 10
   <<
-    { \repeat unfold 5 { <g, g>2 r4 <cs, cs>2 r4 | } }
-    { d2 }
+    {
+      \arpeggioBracket
+      \repeat unfold 5 { <g, g>2\arpeggio r4 <cs, cs>2\arpeggio r4 | }
+    }
+    { d2 s4 s2.^\markup \pedalChange { C \sharp } }
   >>
 }
 
