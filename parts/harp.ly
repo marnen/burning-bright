@@ -95,6 +95,35 @@ harpRHNotes = {
 }
 
 harpLHNotes = {
+  % p. 1
+  \clef bass
+  \key c \minor
+  R1*2 | R1. | R1 |
+  % p. 2
+  R1.*4 |
+  % p. 3
+  R1 |
+  \key a \minor
+  R1.*4 |
+  % p. 4
+  \key c \minor
+  R1*2 |
+  % p. 5
+  R1. | R1 | R1. |
+  % p. 6
+  \key d \minor
+  R1*2 | R1.*2 |
+  % p. 7
+  R1*5 |
+  % p. 8
+  R1. | R1*5/4 |
+  \key ef \major
+  R1.*7 |
+  % p. 10
+  <<
+    { \repeat unfold 5 { <g, g>2 r4 <cs, cs>2 r4 | } }
+    { d2 }
+  >>
 }
 
 harpNotes = <<
@@ -104,8 +133,10 @@ harpNotes = <<
       \harpRHNotes
     >>
   }
-  \context Staff = "LH" {  % Left hand 			
-    \harpLHNotes
+  \context Staff = "LH" {  % Left hand
+    <<
+      \harpLHNotes
+    >>
   }
 >>
 
