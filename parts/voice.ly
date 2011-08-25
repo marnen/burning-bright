@@ -62,7 +62,7 @@ voiceNotes = {
       % p. 8
       r e= a d |
       \time 3/2
-      c f bf,=2 r |
+      c f bf,!=2 r |
       \time 5/4
       r a4 bf8 d,=4. \bar "||"
       \key ef \major

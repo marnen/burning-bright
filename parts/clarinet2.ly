@@ -1,6 +1,9 @@
 \version "2.14.2"
 \include "english.ly"
 \include "violin2.ly"
+\include "clarinet1.ly"
+
+\addQuote "clarinet1_d4" { \transpose c' g \clarinetINotesConcert }
 
 clarinetIINotes = {
   \transpose bf c' {
@@ -44,7 +47,23 @@ clarinetIINotes = {
     \relative a {
       r4 a(\mf bf) r bf( d) |
       r ef(\< g) a( bf d)\! |
+      % p. 7
+      \time 4/4
+      a\f r r2 |
     }
+    a1~\p | a~ | a |
+    % p. 8
+    \relative e' {
+      r4 e_\markup { \italic sempre \dynamic p } a d |
+      \time 3/2
+      c f bf,!='2 r |
+      \time 5/4
+      R1*5/4 \bar "||"
+    }
+    \key ef \major
+    \time 6/4
+    \quoteDuring #"clarinet1_d4" { s1.*7 } \bar "||"
+    \quoteDuring #"flute2_d" { s1.*5 }
   }
 }
 
