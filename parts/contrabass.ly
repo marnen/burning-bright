@@ -48,4 +48,25 @@ contrabassNotes = {
     \time 6/4
     \repeat unfold 2 { s2. \parenthesize ef,2 s4 | }
   }
+  % p. 7
+  d,4\f r d,\mf r |
+  \quoteDuring #"cello" {
+    s1*4 |
+    % p. 8
+    \time 3/2
+    s1. |
+    \time 5/4
+    s1
+  }
+  d,4 \bar "||"
+  \key ef \major
+  \time 6/4
+  \quoteDuring #"cello_d" { s1.*6 | }
+  % p. 10
+  \relative a, {
+    af2.(\< f)\! \bar "||"
+  }
+  \quoteDuring #"cello" { s1.*5 | }
 }
+
+\addQuote "contrabass" { \contrabassNotes }
