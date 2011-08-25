@@ -70,7 +70,7 @@ voiceNotes = {
       af!=,2 r4 r2 r4 |
       % p. 9
       r2 r4 c=\mp c d |
-      ef4. d8 c d ef4 c! r8 ef |
+      ef4. d8\noBeam c d ef4 c! r8 ef |
       f2 r4 r8 ef d4 ef |
       fs2 d ef4 f |
       % p. 10
