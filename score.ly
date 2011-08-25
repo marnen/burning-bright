@@ -33,6 +33,8 @@
 
 \include "parts/percussion.ly"
 
+\include "parts/harp.ly"
+
 \include "parts/voice.ly"
 \include "parts/violin1.ly"
 \include "parts/violin2.ly"
@@ -144,20 +146,7 @@ staffHarp = \new PianoStaff {
 	\set PianoStaff.midiInstrument = #"harp"
 	\set PianoStaff.instrumentName = #"Harp"
 	\set PianoStaff.shortInstrumentName = "Hp."
-				<<
-		\context Staff = "RH" {  % Right hand 
-			\clef treble
-			\key c \minor
-			\relative c' {
-			}
-		}
-		\context Staff = "LH" {  % Left hand 			
-			\clef bass
-			\key c \minor
-			\relative c {
-			}
-		}
-	>>
+	\harpNotes
 }
 
 staffVoice = \new Staff {
