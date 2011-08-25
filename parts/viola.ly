@@ -73,6 +73,16 @@ violaNotes = {
       }
     >>
     bf='(\> a g ef d bf)\! |
+    % p. 7
+    << \repeat unfold 15 { r8 a=([ d a)] } { s8 s\mf } >>
+    r8 a=(\> |
+    \key ef \major
+    bf2.\!\p\< c)\!\mf\> |
+    % p. 9
+    << \repeat unfold 5 { bf2.( c) } { s\!_sim } >> |
+    % p. 10
+    bf=\< c8( ef f g \times 2/3 { bf[ c cs])\! } |
+    << \repeat unfold 5 { r4 d=''( \glissando g,8) r r4 g( \glissando cs,='8) r } { s4 s\f } >>
   }
 }
 
