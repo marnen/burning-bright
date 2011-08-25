@@ -69,7 +69,7 @@ fluteINotes = {
     r2 r4 g=''8 ef! f4. g8 |
   }
   \relative f''' {
-    r2 r4 << { f2. } { s2\< s8 s\! } >> \bar "||"
+    r2 r4 << { f2. } { s2\< \times 2/3 { s8 s s\! } } >> \bar "||"
     <<
       { 
         \repeat unfold 5 { r4 \times 2/3 { g8([ fs f] } \times 2/3 { e[ ef d] } cs4) r r }

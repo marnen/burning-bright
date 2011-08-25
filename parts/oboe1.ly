@@ -56,6 +56,33 @@ oboeINotes = {
   R1. |
   \relative b' {
     r4 bf(\mf\< d) ef( g a)\! |
+    % p. 7
+    \time 4/4
+    d,=''\f r r2 |
+    d1~\p | d~ | d |
+    % p. 8
+    d~ |
+    \time 3/2
+    d1.~ |
+    \time 5/4
+    d1 r4 \bar "||"
+  }
+  \key ef \major
+  \time 6/4
+  R1.*3 |
+  % p. 9
+  \relative c' {
+    r4 cs8\p( d cs b fs' cs4.) r4 |
+    R1. |
+    % p. 10
+    r2 r4 g'='8 ef! f4. g8 |
+  }
+  \relative g'' {
+    r2 r4 << { g2. } { s2\< \times 2/3 { s8 s s\! } } >> \bar "||"
+    <<
+      { \repeat unfold 10 { r4 g2 } }
+      { s4 s\f }
+    >> |
   }
 }
 
