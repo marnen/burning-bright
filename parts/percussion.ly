@@ -1,4 +1,5 @@
 \version "2.14.2"
+\include "../globals.ly"
 
 percussionNotes = {
   \drummode {
@@ -50,5 +51,34 @@ percussionNotes = {
     R1*2 |
     <bd cymc>2\mf r4 r2 r4 |
     <bd cymc>2 r4 r2 r4 |
+    % p. 7
+    <<
+      { \repeat unfold 15 { <bd cymc>4 r } }
+      {
+        s2\f s \mf | s1*4 |
+        % p. 8
+        \time 3/2
+        s1. |
+        \time 5/4
+      }
+    >>
+    <bd cymc>4 \bar "||"
+    \time 6/4
+    R1. |
+    % p. 9
+    <<
+      { bd2.:32~ bd: }
+      { s2.\ppp\< s2\!\p\> s8.. s32\!\ppp }
+    >> |
+    R1. |
+    bd2.:~_\sim\< bd:~\!\> |
+    bd:~\!\< bd:~\!\>
+    % p. 10
+    R1.\! |
+    bd1.:\ppp\< \bar "||"
+    <<
+      { \repeat unfold 10 { r4 <bd cymc>2 } }
+      { s4\! s2\f }
+    >>
   }
 }
