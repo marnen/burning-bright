@@ -80,7 +80,7 @@ oboeINotes = {
     r2 r4 g'='8 ef! f4. g8 |
   }
   \relative g'' {
-    r2 r4 << { g2. } { s2\< \times 2/3 { s8 s s\! } } >> \bar "||"
+    r2 r4 << { g2. } { s2\mf\< \times 2/3 { s8 s s\! } } >> \bar "||"
     <<
       { \repeat unfold 10 { r4 g2 } }
       { s4 s\f }

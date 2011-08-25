@@ -57,7 +57,7 @@ oboeIINotes = {
   R1.*6
   % p. 10
   \relative d'' {
-    r2 r4 << { d2. } { s2\< \times 2/3 { s8 s s\! } } >> \bar "||"
+    r2 r4 << { d2. } { s2\mf\< \times 2/3 { s8 s s\! } } >> \bar "||"
     <<
       { \repeat unfold 5 { r4 d2 r4 cs2 | } }
       { s4 s\f }
