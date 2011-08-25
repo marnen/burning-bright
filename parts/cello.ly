@@ -63,7 +63,7 @@ celloNotes = {
   \time 6/4
   <<
     { \repeat unfold 6 { af2.( f) | } }
-    { s2\p\< s8 s\! s2\mf\> s8 s\! | s_\markup { \italic sim. } }
+    { s2\p\< s8 s\! s2\mf\> s8 s\! | s_\sim }
   >>
   % p. 10
   \relative a {

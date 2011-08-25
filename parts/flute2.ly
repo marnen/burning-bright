@@ -1,5 +1,6 @@
 \version "2.14.2"
 \include "english.ly"
+\include "../globals.ly"
 
 fluteIINotes = {
   % Orchestration p. 1
@@ -63,7 +64,7 @@ fluteIINotes = {
         }
       }
       {
-        s_\markup { \italic sim. }
+        s_\sim
       }
     >>
     % p. 10

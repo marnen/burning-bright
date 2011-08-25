@@ -1,5 +1,6 @@
 \version "2.14.2"
 \include "english.ly"
+\include "../globals.ly"
 \include "flute1.ly"
 \include "violin1.ly"
 
@@ -62,7 +63,7 @@ clarinetINotesConcert = {
     \time 6/4
     <<
       { \repeat unfold 6 { ef8( f g bf c ef) f( ef c bf g f) | } }
-      { s2\p\< s8 s\! s2\mf\> s8 s\! | s_\markup { \italic sim. } }
+      { s2\p\< s8 s\! s2\mf\> s8 s\! | s_\sim }
     >>
     % p. 10
     ef='8(\< f g bf c ef) g,( bf \times 2/3 { c[ ef f] } \times 2/3 { fs[ g af])\! } \bar "||"
