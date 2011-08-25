@@ -11,6 +11,7 @@
 }
 
 \include "english.ly"
+\include "globals.ly"
 \include "parts/piccolo.ly"
 \include "parts/flute1.ly"
 \include "parts/flute2.ly"

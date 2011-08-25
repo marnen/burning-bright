@@ -1,5 +1,6 @@
 \version "2.14.2"
 \include "english.ly"
+\include "../globals.ly"
 
 celloNotes = {
   % Orchestration p. 1
