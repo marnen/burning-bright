@@ -1,5 +1,8 @@
 \version "2.14.2"
 \include "english.ly"
+\include "violin1.ly"
+
+\addQuote "violin1_d" { \transpose c' c \violinINotes }
 
 violinIINotes = {
   % Orchestration p. 1
@@ -78,6 +81,19 @@ violinIINotes = {
       { s8 s\mf }
     >>
     r d='(\< ef g bf d)\! ef(\> d bf a g ef)\! |
+  }
+  % p. 7
+  \quoteDuring #"violin1_d" { s1*5 | s1. | s1 }
+  \relative d' {
+    % p. 8
+    r8 d(\>^\unis |
+    \key ef \major
+    ef2.\!\p\< f)\!\mf\> |
+    % p. 9
+    << \repeat unfold 5 { ef2.( f) } { s\!_\sim } >>
+    % p. 10
+    ef='2.\< f8( g bf c \times 2/3 { ef[ f fs\!)] } |
+    << \repeat unfold 5 { r4 g=''( \glissando d8) r r4 cs( \glissando g='8) r | } { s4 s\f } >>
   }
 }
 
