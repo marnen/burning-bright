@@ -71,7 +71,7 @@ fluteNotes = {
     \relative f''' {
       r2 r4 << { f2. } { s2\mf\< \tuplet 3/2 { s8 s s\! } } >> \bar "||"
       <<
-        { 
+        {
           \repeat unfold 5 { r4 \tuplet 3/2 { g8([ fs f] } \tuplet 3/2 { e[ ef d] } cs4) r r }
         }
         {

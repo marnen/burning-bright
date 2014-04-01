@@ -107,7 +107,7 @@ harpLHNotes = {
 }
 
 harpNotes = <<
-  \context Staff = "harpRH" {  % Right hand 
+  \context Staff = "harpRH" {  % Right hand
     \override Glissando.breakable = ##t
     \harpRHNotes
   }

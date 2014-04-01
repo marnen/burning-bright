@@ -7,7 +7,7 @@ verse = \lyricmode {
 
 voiceNotes = {
   \context Voice = "voice" {
-    \dynamicUp	
+    \dynamicUp
     % Small orchestration p. 1
     \key c \minor
     \clef bass

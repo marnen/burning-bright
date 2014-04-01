@@ -5,7 +5,7 @@
 
 contrabassNotes = {
   \addQuote "cello_d" { \transpose c' c \celloNotes }
-  
+
   % Smallrchestration p. 1
   \clef "F_8"
   \key c \minor
