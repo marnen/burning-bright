@@ -1,4 +1,4 @@
-\version "2.14.2"
+\version "2.18.0"
 \include "english.ly"
 \include "flute2.ly"
 \include "violin1.ly"
@@ -60,7 +60,7 @@ piccoloNotes = {
   \time 6/4
   R1.*6 |
   % p. 10
-  r2 r4 \quoteDuring #"flute2_u" { s2\mf\< \times 2/3 { s8 s s\! } | s1.*5 | }
+  r2 r4 \quoteDuring #"flute2_u" { s2\mf\< \tuplet 3/2 { s8 s s\! } | s1.*5 | }
 }
 
 \addQuote "piccolo" { \piccoloNotes }

@@ -1,4 +1,4 @@
-\version "2.14.2"
+\version "2.18.0"
 \include "english.ly"
 
 verse = \lyricmode {
@@ -18,7 +18,7 @@ voiceNotes = {
       \time 6/4
       r8 d ef d c g' d=4 r r |
       \time 4/4
-      \times 2/3 { r4 c d } ef4. d8 |
+      \tuplet 3/2 { r4 c d } ef4. d8 |
       % p. 2
       c=2\< ef4 f g a\! |
       \time 6/4
@@ -49,14 +49,14 @@ voiceNotes = {
       \key d \minor
       \time 4/4
       r8 e c'!4 bf e,
-      d'='2\< \times 2/3 { r4\! e!2\mf } |
+      d'='2\< \tuplet 3/2 { r4\! e!2\mf } |
       \time 6/4
       c8 bf a=4 r r c! d |
       ef4. d8 c4 r ef2 |
       % p. 7
       \time 4/4
       d4 r r2 |
-      \times 2/3 { c='4 b c } d r |
+      \tuplet 3/2 { c='4 b c } d r |
       r8 c d e~ e4 d |
       c d a g! |
       % p. 8

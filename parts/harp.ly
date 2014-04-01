@@ -1,4 +1,4 @@
-\version "2.14.2"
+\version "2.18.0"
 \include "english.ly"
 \include "../globals.ly"
 
@@ -139,7 +139,7 @@ harpLHNotes = {
 
 harpNotes = <<
   \context Staff = "RH" {  % Right hand 
-    \override Glissando #'breakable = ##t
+    \override Glissando.breakable = ##t
     <<
       \timeTrack
       \harpRHNotes

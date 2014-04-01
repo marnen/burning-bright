@@ -1,4 +1,4 @@
-\version "2.14.2"
+\version "2.18.0"
 \include "english.ly"
 \include "voice.ly"
 
@@ -69,10 +69,10 @@ fluteINotes = {
     r2 r4 g=''8 ef! f4. g8 |
   }
   \relative f''' {
-    r2 r4 << { f2. } { s2\mf\< \times 2/3 { s8 s s\! } } >> \bar "||"
+    r2 r4 << { f2. } { s2\mf\< \tuplet 3/2 { s8 s s\! } } >> \bar "||"
     <<
       { 
-        \repeat unfold 5 { r4 \times 2/3 { g8([ fs f] } \times 2/3 { e[ ef d] } cs4) r r }
+        \repeat unfold 5 { r4 \tuplet 3/2 { g8([ fs f] } \tuplet 3/2 { e[ ef d] } cs4) r r }
       }
       {
         s4 s\f

@@ -1,4 +1,4 @@
-\version "2.14.2"
+\version "2.18.0"
 \include "english.ly"
 \include "../globals.ly"
 
@@ -98,7 +98,7 @@ violinINotes = {
     % p. 9
     << { \repeat unfold 5 { af( bf) | } } { s\!_\sim } >>
     % p. 10
-    af='2.\< bf8( c ef f \times 2/3 { af[ bf c])\! } |
+    af='2.\< bf8( c ef f \tuplet 3/2 { af[ bf c])\! } |
   }
   <<
     \repeat unfold 5 \relative g''' { r4 g( \glissando d8) r r4 cs( \glissando g8) r | }

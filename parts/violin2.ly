@@ -1,4 +1,4 @@
-\version "2.14.2"
+\version "2.18.0"
 \include "english.ly"
 \include "violin1.ly"
 
@@ -92,7 +92,7 @@ violinIINotes = {
     % p. 9
     << \repeat unfold 5 { ef2.( f) } { s\!_\sim } >>
     % p. 10
-    ef='2.\< f8( g bf c \times 2/3 { ef[ f fs\!)] } |
+    ef='2.\< f8( g bf c \tuplet 3/2 { ef[ f fs\!)] } |
     << \repeat unfold 5 { r4 g=''( \glissando d8) r r4 cs( \glissando g='8) r | } { s4 s\f } >>
   }
 }

@@ -1,4 +1,4 @@
-\version "2.14.2"
+\version "2.18.0"
 \include "english.ly"
 \include "../globals.ly"
 
@@ -68,9 +68,9 @@ fluteIINotes = {
       }
     >>
     % p. 10
-    af='8(\< bf c ef f af) c,( ef \times 2/3 { f[ af bf] } \times 2/3 { b[ c cs])\! } \bar "||"
+    af='8(\< bf c ef f af) c,( ef \tuplet 3/2 { f[ af bf] } \tuplet 3/2 { b[ c cs])\! } \bar "||"
     <<
-      { \repeat unfold 5 { r4 \times 2/3 { d='''8( cs c } b16 bf a af g4) r r | } }
+      { \repeat unfold 5 { r4 \tuplet 3/2 { d='''8( cs c } b16 bf a af g4) r r | } }
       { s4 s\f }
     >>
   }

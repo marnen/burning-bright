@@ -1,4 +1,4 @@
-\version "2.14.2"
+\version "2.18.0"
 \include "english.ly"
 
 violaNotes = {
@@ -81,7 +81,7 @@ violaNotes = {
     % p. 9
     << \repeat unfold 5 { bf2.( c) } { s\!_sim } >> |
     % p. 10
-    bf=\< c8( ef f g \times 2/3 { bf[ c cs])\! } |
+    bf=\< c8( ef f g \tuplet 3/2 { bf[ c cs])\! } |
     << \repeat unfold 5 { r4 d=''( \glissando g,8) r r4 g( \glissando cs,='8) r } { s4 s\f } >>
   }
 }
