@@ -24,6 +24,7 @@
 \include "parts/percussion.ly"
 
 \include "parts/harp.ly"
+\include "parts/piano.ly"
 
 \include "parts/voice.ly"
 \include "parts/violin1.ly"
@@ -87,6 +88,12 @@ staffHarp = \new PianoStaff {
 	\set PianoStaff.shortInstrumentName = "Hp."
 	\harpNotes
 }
+staffPiano = \new PianoStaff {
+	\set PianoStaff.midiInstrument = "acoustic grand"
+	\set PianoStaff.instrumentName = "Piano"
+	\set PianoStaff.shortInstrumentName = "Pno."
+	\pianoNotes
+}
 
 staffVoice = \new Staff {
 	\set Staff.instrumentName = "Joe Saul"
@@ -144,6 +151,7 @@ staffContrabass = \new Staff {
     >>
     \staffPercussion
 		\staffHarp
+		\staffPiano
 		\staffVoice
 		\context Lyrics = "lyrics" \lyricmode { \lyricsto "voice" \verse }
 		
