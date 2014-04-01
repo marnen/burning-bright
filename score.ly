@@ -12,24 +12,14 @@
 
 \include "english.ly"
 \include "globals.ly"
-\include "parts/piccolo.ly"
 \include "parts/flute1.ly"
-\include "parts/flute2.ly"
 \include "parts/oboe1.ly"
-\include "parts/oboe2.ly"
-\include "parts/clarinet1.ly"
 \include "parts/clarinet2.ly"
 \include "parts/bassoon1.ly"
-\include "parts/bassoon2.ly"
 
 \include "parts/horn1.ly"
-\include "parts/horn2.ly"
-\include "parts/horn3.ly"
-\include "parts/horn4.ly"
 \include "parts/trumpet1.ly"
 \include "parts/tenor_trombone1.ly"
-\include "parts/tenor_trombone2.ly"
-\include "parts/bass_trombone.ly"
 
 \include "parts/percussion.ly"
 
@@ -42,100 +32,49 @@
 \include "parts/cello.ly"
 \include "parts/contrabass.ly" 
 
-staffPiccolo = \new Staff {
-	\tempo 4 = 132
-	\set Staff.instrumentName = "Piccolo"
-	\set Staff.shortInstrumentName = "Picc."
-	\set Staff.midiInstrument = "piccolo"
-	\piccoloNotes
-}
-staffFlutes = \new Staff {
-	\set Staff.instrumentName = "2 Flutes"
-	\set Staff.shortInstrumentName = "Fls."
+staffFlute = \new Staff {
+	\set Staff.instrumentName = "Flute"
+	\set Staff.shortInstrumentName = "Fl."
 	\set Staff.midiInstrument = "flute"
-  \set Staff.soloText = "1."
-  \set Staff.soloIIText = "2."
-	\partcombine \fluteINotes \fluteIINotes
+  \fluteINotes
 }
-staffOboes = \new Staff {
-	\set Staff.instrumentName = "2 Oboes"
-	\set Staff.shortInstrumentName = "Obs."
+staffOboe = \new Staff {
+	\set Staff.instrumentName = "Oboe"
+	\set Staff.shortInstrumentName = "Ob."
 	\set Staff.midiInstrument = "oboe"
-  \set Staff.soloText = "1."
-  \set Staff.soloIIText = "2."
-	\partcombine \oboeINotes \oboeIINotes
+  \oboeINotes
 }
-staffClarinets = \new Staff {
-	\set Staff.instrumentName = \markup { \concat { "2 Clarinets in B" \smaller \flat } }
-	\set Staff.shortInstrumentName = \markup { \concat { "Cls. (B" \smaller \flat \larger ")" } }
+staffClarinet = \new Staff {
+	\set Staff.instrumentName = \markup { \concat { "Clarinet in B" \smaller \flat } }
+	\set Staff.shortInstrumentName = \markup { \concat { "Cl. (B" \smaller \flat \larger ")" } }
 	\set Staff.midiInstrument = "clarinet"
-  \set Staff.soloText = "1."
-  \set Staff.soloIIText = "2."
 	\transposition bf
-	\partcombine \clarinetINotes \clarinetIINotes
+  \clarinetINotes
 }
-staffBassoons = \new Staff {
-  \set Staff.soloText = "1."
-  \set Staff.soloIIText = "2."
-	\set Staff.instrumentName = "2 Bassoons"
-	\set Staff.shortInstrumentName = "Bns."
+staffBassoon = \new Staff {
+	\set Staff.instrumentName = "Bassoon"
+	\set Staff.shortInstrumentName = "Bn."
 	\set Staff.midiInstrument = "bassoon"
-	\partcombine \bassoonINotes \bassoonIINotes
+  \bassoonINotes
 }
-
-staffHornsInII = \new Staff {
-	\set Staff.instrumentName = \markup { \column { 1 2 } }
-	\set Staff.shortInstrumentName = \markup { \column { 1 2 } }
+staffHorn = \new Staff {
+	\set Staff.instrumentName = "Horn in F"
+	\set Staff.shortInstrumentName = "Hn. (F)"
 	\set Staff.midiInstrument = "french horn"
-  \set Staff.soloText = "1."
-  \set Staff.soloIIText = "2."
 	\transposition f
-	\partcombine \hornINotes \hornIINotes
+  \hornINotes
 }
-staffHornsIIInIV = \new Staff {
-	\set Staff.instrumentName = \markup { \column { 3 4 } }
-	\set Staff.shortInstrumentName = \markup { \column { 3 4 } }
-	\set Staff.midiInstrument = "french horn"
-  \set Staff.soloText = "3."
-  \set Staff.soloIIText = "4."
-	\transposition f
-	\partcombine \hornIIINotes \hornIVNotes
-}
-staffTrumpets = \new Staff {
-	\set Staff.instrumentName = "3 Trumpets in C"
-	\set Staff.shortInstrumentName = "Tpts. (C)"
+staffTrumpet = \new Staff {
+	\set Staff.instrumentName = "Trumpet in C"
+	\set Staff.shortInstrumentName = "Tpt. (C)"
 	\set Staff.midiInstrument = "trumpet"
-  \set Staff.soloText = "1."
-  \set Staff.soloIIText = "2."
 	\trumpetINotes
 }
-staffTenorTrombones = \new Staff {
-	\set Staff.instrumentName = "2 Tenor Trombones"
-	\set Staff.shortInstrumentName = "T.Tbns."
+staffTenorTrombone = \new Staff {
+	\set Staff.instrumentName = "Tenor Trombone"
+	\set Staff.shortInstrumentName = "Tbn."
 	\set Staff.midiInstrument = "trombone"
-  \set Staff.soloText = "1."
-  \set Staff.soloIIText = "2."
-  \partcombine \tenorTromboneINotes \tenorTromboneIINotes
-}
-staffBassTrombone = \new Staff {
-	\set Staff.instrumentName = "Bass Trombone"
-	\set Staff.shortInstrumentName = "B.Tbn."
-	\set Staff.midiInstrument = "trombone"
-	\bassTromboneNotes
-}
-staffGlockenspiel = \new Staff {
-	\set Staff.instrumentName = "Glockenspiel"
-	\set Staff.shortInstrumentName = "Glock."
-	\set Staff.midiInstrument = "glockenspiel"
-	\transposition c''
-	\key c \minor
-	\clef treble
-	\relative c' { 	
- % Type notes here 
-
-	\bar "|."
-	}
-
+  \tenorTromboneINotes
 }
 staffPercussion = \new DrumStaff {
   \set DrumStaff.instrumentName = "Percussion"
@@ -193,33 +132,17 @@ staffContrabass = \new Staff {
 \score {
 	<<
 	  \new StaffGroup << 
-	    \new GrandStaff <<
-        \staffPiccolo
-        \staffFlutes
-      >>
-      \staffOboes
-      \staffClarinets
-      \staffBassoons
+      \staffFlute
+      \staffOboe
+      \staffClarinet
+      \staffBassoon
     >>
     \new StaffGroup <<
-		  \new PianoStaff {
-		    \set PianoStaff.instrumentName = "Horns in F"
-		    \set PianoStaff.shortInstrumentName = "Hns. (F)"
-		    <<
-          \staffHornsInII
-          \staffHornsIIInIV
-        >>
-      }
-      \staffTrumpets
-      \new GrandStaff <<
-        \staffTenorTrombones
-        \staffBassTrombone
-      >>
+      \staffHorn
+      \staffTrumpet
+      \staffTenorTrombone
     >>
-    \new StaffGroup <<
-      \staffGlockenspiel
-      \staffPercussion
-    >>
+    \staffPercussion
 		\staffHarp
 		\staffVoice
 		\context Lyrics = "lyrics" \lyricmode { \lyricsto "voice" \verse }
