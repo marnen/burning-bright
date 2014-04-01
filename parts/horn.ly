@@ -2,7 +2,7 @@
 \include "english.ly"
 \include "voice.ly"
 
-hornINotes = {
+hornNotes = {
   \transpose f c' {
     % Orchestration p. 1
     \clef treble
@@ -73,4 +73,4 @@ hornINotes = {
   }
 }
 
-\addQuote "horn1" { \hornINotes }
+\addQuote "horn" { \hornNotes }

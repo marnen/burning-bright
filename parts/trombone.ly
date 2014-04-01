@@ -1,7 +1,7 @@
 \version "2.18.0"
 \include "english.ly"
 
-tenorTromboneINotes = {
+tenorTromboneNotes = {
   % Orchestration p. 1
   \clef tenor
   \key c \minor
@@ -59,4 +59,4 @@ tenorTromboneINotes = {
   >>
 }
 
-\addQuote "tenor_trombone1" { \tenorTromboneINotes }
+\addQuote "tenor_trombone" { \tenorTromboneNotes }

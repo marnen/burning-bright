@@ -2,7 +2,7 @@
 \include "english.ly"
 \include "voice.ly"
 
-trumpetINotes = {
+trumpetNotes = {
   % Orchestration p. 1
   \clef treble
   \key c \minor
@@ -64,4 +64,4 @@ trumpetINotes = {
   R1.*5 |
 }
 
-\addQuote "trumpet1" { \trumpetINotes }
+\addQuote "trumpet" { \trumpetNotes }

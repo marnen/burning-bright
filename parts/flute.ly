@@ -2,7 +2,7 @@
 \include "english.ly"
 \include "voice.ly"
 
-fluteINotes = {
+fluteNotes = {
   % Orchestration p. 1
   \clef treble
   \key c \minor
@@ -81,5 +81,5 @@ fluteINotes = {
   }
 }
 
-\addQuote "flute1" { \fluteINotes }
-\addQuote "flute1_d" { \transpose c' c \fluteINotes }
+\addQuote "flute" { \fluteNotes }
+\addQuote "flute_d" { \transpose c' c \fluteNotes }

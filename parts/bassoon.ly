@@ -4,7 +4,7 @@
 
 \addQuote "cello" { \celloNotes }
 
-bassoonINotes = {
+bassoonNotes = {
   % Orchestration p. 1
   \key c \minor
   \clef bass
@@ -77,5 +77,5 @@ bassoonINotes = {
   }
 }
 
-\addQuote "bassoon1" { \bassoonINotes }
-\addQuote "bassoon1_d" { \transpose c' c \bassoonINotes }
+\addQuote "bassoon" { \bassoonNotes }
+\addQuote "bassoon_d" { \transpose c' c \bassoonNotes }

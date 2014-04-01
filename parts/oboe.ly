@@ -1,7 +1,7 @@
 \version "2.18.0"
 \include "english.ly"
 
-oboeINotes = {
+oboeNotes = {
   % Orchestration p. 1
   \clef treble
   \key c \minor
@@ -88,4 +88,4 @@ oboeINotes = {
   }
 }
 
-\addQuote "oboe1" { \oboeINotes }
+\addQuote "oboe" { \oboeNotes }

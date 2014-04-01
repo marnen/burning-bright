@@ -1,10 +1,10 @@
 \version "2.18.0"
 \include "english.ly"
 \include "../globals.ly"
-\include "flute1.ly"
+\include "flute.ly"
 \include "violin1.ly"
 
-clarinetINotesConcert = {
+clarinetNotesConcert = {
   % Orchestration p. 1
   \clef treble
   \key c \minor
@@ -68,11 +68,11 @@ clarinetINotesConcert = {
     % p. 10
     ef='8(\< f g bf c ef) g,( bf \tuplet 3/2 { c[ ef f] } \tuplet 3/2 { fs[ g af])\! } \bar "||"
   }
-  \quoteDuring #"flute1_d" { s1.*5 | }
+  \quoteDuring #"flute_d" { s1.*5 | }
 }
 
-clarinetINotes = {
-  \transpose bf c' \clarinetINotesConcert
+clarinetNotes = {
+  \transpose bf c' \clarinetNotesConcert
 }
 
-\addQuote "clarinet1" { \clarinetINotesConcert }
+\addQuote "clarinet" { \clarinetNotesConcert }
