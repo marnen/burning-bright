@@ -37,7 +37,10 @@ staffFlute = \new Staff {
 	\set Staff.instrumentName = "Flute"
 	\set Staff.shortInstrumentName = "Fl."
 	\set Staff.midiInstrument = "flute"
-  \fluteNotes
+  <<
+    \meter
+    \fluteNotes
+  >>
 }
 staffOboe = \new Staff {
 	\set Staff.instrumentName = "Oboe"
