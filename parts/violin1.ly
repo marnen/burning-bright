@@ -3,37 +3,29 @@
 \include "../globals.ly"
 
 violinINotes = {
-  % Orchestration p. 1
+  % Small orchestration p. 1
   \key c \minor
   <<
-    {
-        \time 4/4
-      s1*2\mp |
-      \time 6/4
-      s1. |
-      \time 4/4
-      s1 |
-      % p. 2
-      \time 3/2
-      s2\< s2.. s8\! |
-      \time 6/4
-      s8 s\f s2 s2. |
-      s1.*2 |
-      % p. 3
-      \time 4/4
-      s1 |
+    { s8 s\mp }
+    \repeat unfold 13 {
+      \relative d' {
+        r8 d([ g d)]
+      }
     }
-    {
-      \repeat unfold 12 {
-        \relative d' {
-          r8 d([ g d)]
-        }
+  >>
+  \relative e' {
+    \tuplet 5/4 { ef(\< a d g c\!) }
+  }
+  <<
+    { s8 s\f }
+    \repeat unfold 7 {
+      \relative c''' {
+        r8 cs([ g d cs g=')]
       }
-      \repeat unfold 7 {
-        \relative c''' {
-          r8 cs([ g d cs g=')]
-        }
-      }
+    }
+  >>
+  
+  %{
       r8 cs''' |
     }
   >>
@@ -105,6 +97,7 @@ violinINotes = {
     \repeat unfold 5 \relative d''' { r4 d( \glissando g,8) r r4 g( \glissando cs,=''8) r | }
     { s4 s\f^\div }
   >>
+  %}
 }
 
 \addQuote "violin1" { \violinINotes }
