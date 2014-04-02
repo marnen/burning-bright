@@ -4,7 +4,7 @@
 
 tenorTromboneNotes = {
   % Small orchestration p. 1
-  \clef tenor
+  \clef bass
   \key c \minor
   R1*2 |
   R1.*2 |
