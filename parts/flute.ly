@@ -10,7 +10,10 @@ fluteNotes = {
   R1. |
   R1. |
   % p. 2
-  R1*2 |
+  R1 |
+  \relative c' {
+    r4 c8(\mp\< d) \tuplet 5/4 { ef( a d g c)\! }
+  }
   <<
     { s8 s\f }
     \repeat unfold 7 {
