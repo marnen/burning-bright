@@ -10,16 +10,11 @@ tenorTromboneNotes = {
   R1.*2 |
   % p. 2
   R1*2 |
-  \relative g, {
-    <<
-      { s4_\mfpesante }
-      \repeat unfold 3 {
-        g2 r4 ef2 r4
-      }
-    >>
-    % p. 3
-    g=,2 r4 |
-  }
+  % 6/4
+  R1.*2 |
+  % p. 3
+  % 9/4
+  R4*9 |
   %{
     \time 4/4
     R1 |
