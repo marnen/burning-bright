@@ -19,12 +19,28 @@ violinIINotes = {
   }
   <<
     { s8 s\f }
-    \repeat unfold 7 {
+    \repeat unfold 10 {
       \relative d'' {
         r8 d([ cs g d cs=')]
       }
     }
   >>
+  \relative d'' {
+    % p. 3
+    r8 d([ cs g] d[ g cs d)] |
+  }
+  % p. 4
+  \key a \minor
+  % 6/4
+  \relative g'' {
+    r8 g( f d b gs=')
+  }
+  \repeat unfold 3 {
+    \relative g'' {
+      r8 g!( f d b gs!=')
+    }
+  }
+  
   %{
     \key a \minor
     \time 6/4
@@ -34,16 +50,6 @@ violinIINotes = {
         % p. 4
         s8 s\> s2 s s8 s\! |
         s8 s\mp
-      }
-      {
-        \relative g'' {
-          r8 g( f d b gs=')
-        }
-        \repeat unfold 7 {
-          \relative g'' {
-            r8 g!( f d b gs!=')
-          }
-        }
       }
     >>
     \bar "||"

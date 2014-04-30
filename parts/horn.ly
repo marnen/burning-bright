@@ -15,17 +15,20 @@ hornNotes = {
       <<
         { s4 s_\mfpesante }
         {
-          \repeat unfold 3 {
+          \repeat unfold 5 {
             r4 d='2 r4 cs2
           }
         }
       >>
       % p. 3
-      r4 d='2 |
+      r4 d='2 r4 |
+      % p. 4
+      % a minor
+      % 6/4
+      \repeat unfold 2 {
+        gs='2 r4 f2 r4 |
+      }
       %{
-        \time 4/4
-        r4 cs''2 r4 |
-        \time 6/4
         <<
           {
             \repeat unfold 4 {

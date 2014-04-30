@@ -16,16 +16,22 @@ fluteNotes = {
   }
   <<
     { s8 s\f }
-    \repeat unfold 7 {
+    \repeat unfold 10 {
       \relative d''' {
-        r8 d( cs g d cs)
+        r8 d([ cs g d cs)]
       }
     }
   >>
-  %{
+  \relative d''' {
+    r8 d([ cs g] d[ g cs d])
+    % p. 4
     \key a \minor
-    \time 6/4
-    R1. |
+    % 6/4
+    \repeat unfold 4 {
+      r af=''( g af f e)
+    }
+  }
+  %{
     % p. 4
     r2 r4
     \quoteDuring #"voice_u" {

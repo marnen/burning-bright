@@ -17,17 +17,19 @@ bassoonNotes = {
     \tuplet 3/2 { f=,2 ef1) } |
   }
   \quoteDuring #"cello" {
+    % 6/4
     s1.*2 |
     % p. 3
+    % 9/4
     s1. s2.|
-    %{
-      s1 |
-      \key a \minor
-      \time 6/4
-      s1.*4
-      % p. 4
-      s2
-    %}
+    % 6/4
+    s1. |
+    % 7/4
+    s1.. |
+    % p. 4
+    % a minor
+    % 6/4
+    s1.*2 |
   }
   %{
     r2 |

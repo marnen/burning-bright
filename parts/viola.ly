@@ -14,21 +14,18 @@ violaNotes = {
   <<
     { s4_\fpesante }
     {
-      \repeat unfold 3 {
+      \repeat unfold 5 {
         g2 r4 ef2 r4
       }
     }
   >>
-  g2 r4 |
+  g2 r |
+  % p. 4
+  \key a \minor
+  \repeat unfold 2 {
+    b=2 r4 e2 r4 |
+  }
   %{
-    \key a \minor
-    <<
-      {
-        b!2 r4 e!2 r4 |
-        \repeat unfold 3 {
-          b2 r4 e!2 r4
-        }
-      }
       {
         s1.*2 |
         % p. 4

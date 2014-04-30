@@ -13,14 +13,21 @@ tenorTromboneNotes = {
   % 6/4
   R1.*2 |
   % p. 3
-  % 9/4
-  R4*9 |
-  %{
-    \time 4/4
-    R1 |
+  \relative d {
+    % 9/4
+    r2 r4 r2 r4 r2 d4\mf |
+    % 6/4
+    ef=2 d4 ~ d cs4. g'8 |
+    % 7/4
+    ef=2 r4 r2 r4 ef,\f ~ |
+    % p. 4
     \key a \minor
-    \time 6/4
-    R1.*4 \bar "||"
+    % 6/4
+    \repeat unfold 2 {
+      ef=,4 r g ~ g r ef ~ |
+    }
+  }
+  %{
     % p. 4
     \key c \minor
     \time 4/4

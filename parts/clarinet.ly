@@ -13,17 +13,22 @@ clarinetNotesConcert = {
   R1.*2 |
   % p. 2
   R1*2 |
-  <<
-    { s4 s_\fpesante }
-    \repeat unfold 3 {
-      r4 cs''2 r4 g''2
+  \relative c'' {
+    <<
+      { s4 s_\fpesante }
+      \repeat unfold 5 {
+        r4 cs2 r4 g'2
+      }
+    >>
+    r4 cs,=''2 r4 |
+    % p. 4
+    \key a \minor
+    % 6/4
+    \repeat unfold 2 {
+      g'=''2 r4 d2 r4 |
     }
-  >>
-  r4 cs''2
+  }
   %{
-    \time 3/2
-    R1. |
-    \time 6/4
     \quoteDuring #"violin1" {
       s1.*3 |
       % p. 3

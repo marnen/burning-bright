@@ -17,12 +17,14 @@ meter = {
   % p. 3
   \time 9/4
   s1. s2. |
+  \time 6/4
+  s1. |
+  \time 7/4
+  s1.. \bar "||"
+  % p. 4
+  \time 6/4
+  s1.*2 |
   %{
-    \time 6/4
-    s1.*4 \bar "||"
-    % p. 4
-    \time 4/4
-    s1*2 |
     % p. 5
     \time 3/2
     s1. |

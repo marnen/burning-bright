@@ -10,34 +10,22 @@ oboeNotes = {
   R1.*2 |
   % p. 2
   R1*2 |
-  <<
-    { s4 s_\fpesante }
-    \repeat unfold 3 {
-      r4 g'2 r4 d''2
-    }
-  >>
-  r4 g'2 |
-  %{
-    % p. 3
-    \time 4/4
-    R1 |
-    \key a \minor
-    \time 6/4
+  \relative g' {
     <<
-      {
-        \repeat unfold 8 {
-          \relative a'' {
-            r8 af( g af f e)
-          }
-        }
-      }
-      {
-        s8 s\f s2 s2. |
-        s1. |
-        s8 s\> s2 s s8 s\! |
-        s8 s\mp
+      { s4 s_\fpesante }
+      \repeat unfold 5 {
+        r4 g2 r4 d'2
       }
     >>
+    r4 g,='2 r4 |
+    % p. 4
+    \key a \minor
+    % 6/4
+    \repeat unfold 2 {
+      d'=''2 r4 gs,2 r4 |
+    }
+  }
+  %{
     \bar "||"
     % p. 4
     \time 4/4

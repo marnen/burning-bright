@@ -18,18 +18,25 @@ violinINotes = {
   }
   <<
     { s8 s\f }
-    \repeat unfold 7 {
+    \repeat unfold 10 {
       \relative c''' {
         r8 cs([ g d cs g=')]
       }
     }
   >>
-
-  %{
-      r8 cs''' |
-    }
-  >>
+  \relative c''' {
+    % p. 3
+    r8 cs([ g d] cs[ d g cs)] |
+  }
+  % p. 4
   \key a \minor
+  % 6/4
+  \repeat unfold 4 {
+    \relative d''' {
+      r8 d( b a gs d='')
+    }
+  }
+  %{
   \time 6/4
   <<
     {
@@ -37,13 +44,6 @@ violinINotes = {
       % p. 4
       s8 s\> s2 s s8 s\! |
       s8 s\mp
-    }
-    {
-      \repeat unfold 8 {
-        \relative d''' {
-          r8 d( b a gs d='')
-        }
-      }
     }
   >>
   \bar "||"

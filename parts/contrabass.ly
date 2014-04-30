@@ -14,9 +14,11 @@ contrabassNotes = {
   % p. 2
   R1*2 |
   \quoteDuring #"cello_d" {
-    \repeat unfold 3 { s2. \parenthesize ef,2 s4 }
+    \repeat unfold 5 { s2. \parenthesize ef,2 s4 }
     % p. 3
-    s2.
+    s1 |
+    % p. 4
+    s1.*2 |
   }
   %{
     r2 |

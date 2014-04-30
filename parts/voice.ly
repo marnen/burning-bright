@@ -23,12 +23,16 @@ voiceNotes = {
       r d'=' cs g d cs= |
       % p. 3
       d'=' cs g bf4. a=8 r4 r2 r4 |
+      % 6/4
+      R1. |
+      % 7/4
+      r2 d=' cs e4 |
+      % p. 4
+      % 6/4
+      \key a \minor
+      f='2 d4 ~ d gs,2 |
+      r8 e'=' f4. d8 cs4. e8 d4 |
       %{
-        \time 4/4
-        r d=' cs e |
-        \key a \minor
-        f d gs, r8 e' f4. d8 |
-        % p. 4
         cs='4. e8 d4 r c d |
         bf2\> a4 r g!2\! |
         f4\mp ef d r ef4. d8 \bar "||"

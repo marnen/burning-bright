@@ -15,6 +15,15 @@ trumpetNotes = {
     R1. |
     % p. 3
     r2 r8 d'=''8 ~ d4 cs g bf4. a8 r4 |
+    % 6/4
+    R1. |
+    % 7/4
+    r2 r4 d='' ~ d cs e |
+    % p. 4
+    \key a \minor
+    % 6/4
+    f=''2 r4 r2 r4 |
+    R1. |
   }
   %{
     \key c \minor

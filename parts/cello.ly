@@ -18,18 +18,20 @@ celloNotes = {
       }
     }
   >>
-  <<
-    { s4\!_\fpesante }
-    \repeat unfold 3 {
-      \relative g, {
+  \relative g, {
+    <<
+      { s4\!_\fpesante }
+      \repeat unfold 5 {
         g2 r4 ef2 r4
       }
-    }
-  >>
-  \relative g, {
+    >>
     % p. 3
-    g2 r4 |
-
+    g=,2 r |
+    % p. 4
+    \key a \minor
+    \repeat unfold 2 {
+      b=,2 r4 e,2 r4 |
+    }
   }
 }
 

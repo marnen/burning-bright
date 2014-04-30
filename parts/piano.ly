@@ -10,12 +10,18 @@ pianoRHNotes = {
   R1*2 |
   <<
     { s4_\mfpesante }
-    \repeat unfold 3 {
+    \repeat unfold 5 {
       g2 r4 ef2 r4
     }
   >>
   % p. 3
-  g2 r4 |
+  g2 r2 |
+  % p. 4
+  \key a \minor
+  % 6/4
+  \repeat unfold 2 {
+    b2 r4 e2 r4 |
+  }
 }
 
 pianoLHNotes = {
@@ -26,11 +32,17 @@ pianoLHNotes = {
   % p. 2
   R1*2 |
   \relative g, {
-    \repeat unfold 3 {
+    \repeat unfold 5 {
       <g g,>2 r4 <ef ef,>2 r4
     }
     % p. 3
-    <g=, g,>2 r4 |
+    <g=, g,>2 r |
+    % p. 4
+    \key a \minor
+    % 6/4
+    \repeat unfold 2 {
+      <b=, b,>2 r4 <e, e,>2 r4 |
+    }
   }
 }
 

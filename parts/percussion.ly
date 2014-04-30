@@ -11,7 +11,17 @@ percussionNotes = {
     <cymc bd>2\mf r4 r2 r4 |
     bd2 r4 r2 r4 |
     % p. 3
-    bd2 r4 r2 r4 r2 r4 |
+    bd2 r4 r2 r4 bd2 r4 |
+    % 6/4
+    r2 r4 bd2 r4 |
+    % 7/4
+    r2 r4 bd2 r4 bd ~ |
+    % p. 4
+    % a minor
+    % 6/4
+    \repeat unfold 2 {
+      bd4 r r r r bd ~ |
+    }
     %{
       \time 4/4
       <<

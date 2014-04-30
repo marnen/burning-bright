@@ -20,17 +20,20 @@ harpRHNotes = {
   \relative c'' {
     <<
       { s4 s_\fpesante }
-      \repeat unfold 3 {
+      \repeat unfold 5 {
         r4 <cs g>2 r4 <cs d g>2
       }
     >>
     % p. 3
-    r4 <cs='' g>2 |
+    r4 <cs='' g>2 r4 |
+    % p. 4
+    \key a \minor
+    % 6/4
+    \repeat unfold 2 {
+      <af=' d g>2 r4 <af d>2 r4 |
+    }
   }
   %{
-    R1 |
-    \key a \minor
-    R1.*4 |
     % p. 4
     \key c \minor
     R1*2 |
@@ -72,15 +75,19 @@ harpLHNotes = {
   % p. 2
   R1*2 |
   \relative d' {
-    \repeat unfold 3 {
+    \repeat unfold 5 {
         r4 <d g,>2 r4 <cs d g>2
     }
     % p. 3
-    r4 <d=' g,>2 |
+    r4 <d=' g,>2 r4 |
+    % p. 4
+    \key a \minor
+    % 6/4
+    \repeat unfold 2 {
+      <af= d g>2 r4 <f b>2 r4 |
+    }
   }
   %{
-    \key a \minor
-    R1.*4 |
     % p. 4
     \key c \minor
     R1*2 |
