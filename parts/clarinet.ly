@@ -23,10 +23,24 @@ clarinetNotesConcert = {
     r4 cs,=''2 r4 |
     % p. 4
     \key a \minor
-    % 6/4
-    \repeat unfold 2 {
-      g'=''2 r4 d2 r4 |
-    }
+    <<
+      \repeat unfold 5 {
+        g'=''2 r4 d2 r4 
+      } |
+      {
+        % 6/4
+        s1. |
+        % 9/4
+        s4*9 |
+        s1.\>
+        % 6/4
+        % p. 5
+        % 9/4
+      }
+    >>
+    \key c \minor
+    % 4/4
+    c,='4\!\p r r2 |
   }
   %{
     \quoteDuring #"violin1" {

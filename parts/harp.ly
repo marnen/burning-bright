@@ -19,7 +19,7 @@ harpRHNotes = {
   R1*2 |
   \relative c'' {
     <<
-      { s4 s_\fpesante }
+      { s4_\markup { \harp-pedal #"-v-|---^" } s_\fpesante }
       \repeat unfold 5 {
         r4 <cs g>2 r4 <cs d g>2
       }
@@ -28,43 +28,25 @@ harpRHNotes = {
     r4 <cs='' g>2 r4 |
     % p. 4
     \key a \minor
-    % 6/4
-    \repeat unfold 2 {
-      <af=' d g>2 r4 <af d>2 r4 |
-    }
-  }
-  %{
-    % p. 4
-    \key c \minor
-    R1*2 |
-    % p. 5
-    R1. | R1 | R1. |
-    % p. 6
-    \key d \minor
-    R1*2 | R1.*2 |
-    % p. 7
-    R1*5 |
-    % p. 8
-    R1. | R1*5/4 |
-    \key ef \major
     <<
-      {
-        \repeat unfold 6 { <ef af>2. \glissando <f'' bf''> \glissando | }
-        % p. 10
-        \voiceOne <ef af>2.\< \glissando <f'' bf''> | \voiceTwo d''2\!\f
+      \repeat unfold 5 {
+        <af=' d g>2 r4 <af d>2 r4
       }
-      \new Voice {
-        s2.\p\<_\markup { \harp-pedal #"v-^|^-v^" } s\!\mf\> |
-        s1.*5\!_\sim |
-        % p. 10
-        \voiceTwo s2. <d' g'>2._\markup \column { \pedalChange { D \natural } \pedalChange { G \natural } } \glissando |
-        \voiceOne <g'' d'''>2
+      {
+        % 6/4
+        s1. |
+        % 9/4
+        s4*9 |
+        % 6/4
+        s1.\> |
+        % p. 5
+        % 9/4
       }
     >>
-    \oneVoice r4 r2 r4 |
-    % p. 11
-    R1.*4 |
-  %}
+    \key c \minor
+    % 4/4
+    c=''4\!\p_\markup \pedalChange { C \natural } r r2 |
+  }
 }
 
 harpLHNotes = {
@@ -82,10 +64,17 @@ harpLHNotes = {
     r4 <d=' g,>2 r4 |
     % p. 4
     \key a \minor
-    % 6/4
-    \repeat unfold 2 {
-      <af= d g>2 r4 <f b>2 r4 |
-    }
+    \repeat unfold 5 {
+      % 6/4
+      % 9/4
+      % 6/4
+      % p. 5
+      % 9/4
+      <af= d g>2 r4 <f b>2 r4
+    } |
+    \key c \minor
+    % 4/4
+    c'='4 r r2
   }
   %{
     % p. 4

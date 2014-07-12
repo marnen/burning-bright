@@ -31,14 +31,16 @@ voiceNotes = {
       % 6/4
       \key a \minor
       f='2 d4 ~ d gs,2 |
-      r8 e'=' f4. d8 cs4. e8 d4 |
+      % 9/4
+      r8 e'=' f4. d8 cs4. e8 d4 r c d |
+      % 6/4
+      bf=2\> a4 r g!2\! |
+      % 9/4
+      f=4 ef d r2 r4 r ef!4. d8 |
+      % 4/4
+      \key c \minor
+      c=2 r |
       %{
-        cs='4. e8 d4 r c d |
-        bf2\> a4 r g!2\! |
-        f4\mp ef d r ef4. d8 \bar "||"
-        \time 4/4
-        \key c \minor
-        c2 r |
         % p. 5
         r8 d= ef4 r2 |
         \time 3/2

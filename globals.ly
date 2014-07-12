@@ -23,7 +23,16 @@ meter = {
   s1.. \bar "||"
   % p. 4
   \time 6/4
-  s1.*2 |
+  s1. |
+  \time 9/4
+  s4*9 |
+  \time 6/4
+  s1. |
+  % p.5
+  \time 9/4
+  s4*9 \bar "||"
+  \time 4/4
+  s1 |
   %{
     % p. 5
     \time 3/2
@@ -55,6 +64,8 @@ meter = {
 
 
 sim = \markup { \italic sim. }
+
+dim = \markup { \italic dim. }
 
 div = \markup { div. }
 unis = \markup { unis. }

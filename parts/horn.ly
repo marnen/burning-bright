@@ -24,10 +24,24 @@ hornNotes = {
       r4 d='2 r4 |
       % p. 4
       % a minor
-      % 6/4
-      \repeat unfold 2 {
-        gs='2 r4 f2 r4 |
-      }
+      <<
+        \repeat unfold 5 {
+          gs='2 r4 f2 r4 |
+        }
+        {
+          % 6/4
+          s1. |
+          % 9/4
+          s4*9 |
+          % 6/4
+          s1.\> |
+          % p. 5
+          % 9/4
+        }
+      >>
+      % c minor
+      % 4/4
+      c='4\!\p r r2 |
       %{
         <<
           {

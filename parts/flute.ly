@@ -27,16 +27,32 @@ fluteNotes = {
     % p. 4
     \key a \minor
     % 6/4
-    \repeat unfold 4 {
+    \repeat unfold 2 {
       r af=''( g af f e)
-    }
+    } |
+    % 9/4
+    r af,='( g af f e) d( gs a b d g) af2 r4 |
+    <<
+      {
+        \repeat unfold 3 {
+          r8 af=''( g af f e)
+        }
+        r af,='( g af f e) r af( b d g b) |
+      }
+      {
+        % 6/4
+        s8 s\> s2 s2. |
+        % p. 5
+        % 9/4
+        s4*9 |
+      }
+    >>
+    % 4/4
+    \key c \minor
+    c,=''2\!\p
+      
   }
   %{
-    % p. 4
-    r2 r4
-    \quoteDuring #"voice_u" {
-      s4 s2\f | s1.*2 | s1 |
-    } % 4/4, c minor
     % p. 5
     R1 |
     \time 3/2

@@ -23,7 +23,16 @@ trumpetNotes = {
     \key a \minor
     % 6/4
     f=''2 r4 r2 r4 |
-    R1. |
+    % 9/4
+    r2 r4 r cs=''4. e8 d r c4 d |
+    % 6/4
+    bf2\> a4 r g2 |
+    % p. 5
+    % 9/4
+    f='4 r f ~ f8 ef d4. cs8\!\p r2 r4 |
+    \key c \minor
+    % 4/4
+    R1 |
   }
   %{
     \key c \minor

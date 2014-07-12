@@ -8,6 +8,7 @@ pianoRHNotes = {
   R1*2 | R1.*2 |
   % p. 2
   R1*2 |
+  \clef bass
   <<
     { s4_\mfpesante }
     \repeat unfold 5 {
@@ -18,10 +19,24 @@ pianoRHNotes = {
   g2 r2 |
   % p. 4
   \key a \minor
-  % 6/4
-  \repeat unfold 2 {
-    b2 r4 e2 r4 |
-  }
+  <<
+    \repeat unfold 5 {
+      b2 r4 e2 r4
+    }
+    {
+      % 6/4
+      s1. |
+      % 9/4
+      s4*9 |
+      % 6/4
+      s1.\> |
+      % p. 5
+      % 9/4
+    }
+  >>
+  \key c \minor
+  % 4/4
+  c=4\!\p r r2 |
 }
 
 pianoLHNotes = {
@@ -39,10 +54,17 @@ pianoLHNotes = {
     <g=, g,>2 r |
     % p. 4
     \key a \minor
-    % 6/4
-    \repeat unfold 2 {
-      <b=, b,>2 r4 <e, e,>2 r4 |
-    }
+    \repeat unfold 5 {
+      % 6/4
+      % 9/4
+      % 6/4
+      % p. 5
+      % 9/4
+      <b=, b,>2 r4 <e, e,>2 r4 
+    } |
+    \key c \minor
+    % 4/4
+    c=,4 r r2 |
   }
 }
 

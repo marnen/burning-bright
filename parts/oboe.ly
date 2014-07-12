@@ -20,10 +20,24 @@ oboeNotes = {
     r4 g,='2 r4 |
     % p. 4
     \key a \minor
-    % 6/4
-    \repeat unfold 2 {
-      d'=''2 r4 gs,2 r4 |
-    }
+    <<
+      \repeat unfold 5 {
+        d'=''2 r4 gs,2 r4
+      } |
+      {
+        % 6/4
+        s1. |
+        % 9/4
+        s4*9 |
+        % 6/4
+        s1.\>
+        % p.5
+        % 9/4
+      }
+    >>
+    % 4/4
+    \key c \minor
+    g!='4\!\p r r2 |
   }
   %{
     \bar "||"

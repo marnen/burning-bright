@@ -18,47 +18,19 @@ contrabassNotes = {
     % p. 3
     s1 |
     % p. 4
-    s1.*2 |
-  }
-  %{
-    r2 |
+    % 6/4
+    s1. |
+    % 9/4
+    s4*9 |
+    % 6/4
+    s1. |
     % p. 5
-    R1 |
-    \time 3/2
-    R1. |
-    \time 4/4
-    R1 |
-    \time 3/2
-    R1. |
-    % p. 6
-    \key d \minor
-    \time 4/4
-    R1 |
-    \quoteDuring #"cello_d" {
-      s1\mp |
-      \time 6/4
-      \repeat unfold 2 { s2. \parenthesize ef,2 s4 | }
-    }
-    % p. 7
-    d,4\f r d,\mf r |
-    \quoteDuring #"cello" {
-      s1*4 |
-      % p. 8
-      \time 3/2
-      s1. |
-      \time 5/4
-      s1
-    }
-    d,4 \bar "||"
-    \key ef \major
-    \time 6/4
-    \quoteDuring #"cello_d" { s1.*6 | }
-    % p. 10
-    \relative a, {
-      af2.(\< f)\! \bar "||"
-    }
-    \quoteDuring #"cello" { s1.*5 | }
-  %}
+    % 9/4
+    s4*9 |
+    % c minor
+    % 4/4
+    s2
+  } r2 |
 }
 
 \addQuote "contrabass" { \contrabassNotes }

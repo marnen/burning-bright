@@ -29,9 +29,24 @@ celloNotes = {
     g=,2 r |
     % p. 4
     \key a \minor
-    \repeat unfold 2 {
-      b=,2 r4 e,2 r4 |
-    }
+    <<
+      \repeat unfold 5 {
+        b=,2 r4 e,2 r4 |
+      }
+      {
+        % 6/4
+        s1. |
+        % 9/4
+        s4*9 |
+        % 6/4
+        s1.\>
+        % p. 5
+        % 9/4
+      }
+    >>
+    % 4/4
+    \key c \minor
+    c'=4\!\p r af r 
   }
 }
 

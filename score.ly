@@ -38,6 +38,7 @@ staffFlute = \new Staff {
   \set Staff.shortInstrumentName = "Fl."
   \set Staff.midiInstrument = "flute"
   <<
+    \accidentalStyle Score.modern
     \meter
     \fluteNotes
   >>
