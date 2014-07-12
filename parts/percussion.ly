@@ -24,6 +24,11 @@ percussionNotes = {
         \repeat unfold 2 {
           bd4 r r r2 bd4 ~ 
         } bd r r |
+        \oneVoice
+        r2 bd4_\dim ~ bd r r |
+        r2 bd4\mp ~ bd r r r2 bd4\ppp ~ |
+        \voiceTwo
+        bd r
       }
       \new DrumVoice {
         % 6/4
@@ -31,18 +36,17 @@ percussionNotes = {
         cymc2 r4 r2 r4 |
         % 9/4
         r2 r4 r2 r4 cymc2 r4 |
+        % 6/4
+        s1. |
+        % p. 4
+        % 9/4
+        s4*9 |
+        % c minor
+        % 4/4
+        cymc2
       }
     >>
-    % 6/4
     \oneVoice
-    r2 bd4_\dim ~ bd r r |
-    % 9/4
-    r2 bd4\mp ~ bd r r r2 bd4\ppp ~ |
-    % c minor
-    % 4/4
-    bd r r2 |
-    % p. 5
-    % 9/4
-    
+    r2 |
   }
 }
