@@ -70,7 +70,7 @@ pianoLHNotes = {
 
 pianoNotes = {
   <<
-    \context Staff = "pianoRH" { \pianoRHNotes }
-    \context Staff = "pianoLH" { \pianoLHNotes }
+    \context Staff = "pianoRH" \with { \remove "Staff_performer" } { \pianoRHNotes }
+    \context Staff = "pianoLH" \with { \remove "Staff_performer" } { \pianoLHNotes }
   >>
 }

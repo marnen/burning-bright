@@ -86,13 +86,13 @@ staffPercussion = \new DrumStaff {
   \set DrumStaff.shortInstrumentName = "Perc."
   \percussionNotes
 }
-staffHarp = \new PianoStaff {
+staffHarp = \new PianoStaff \with { \consists "Staff_performer" } {
   \set PianoStaff.midiInstrument = "orchestral harp"
   \set PianoStaff.instrumentName = "Harp"
   \set PianoStaff.shortInstrumentName = "Hp."
   \harpNotes
 }
-staffPiano = \new PianoStaff {
+staffPiano = \new PianoStaff \with { \consists "Staff_performer" } {
   \set PianoStaff.midiInstrument = "acoustic grand"
   \set PianoStaff.instrumentName = "Piano"
   \set PianoStaff.shortInstrumentName = "Pno."
