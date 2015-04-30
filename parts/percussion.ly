@@ -8,7 +8,10 @@ percussionNotes = {
     R1.*2 |
     % p. 2
     R1*2 |
-    <cymc bd>2\mf r4 r2 r4 |
+    <cymc bd>2^"Cym."
+      -\tweak outside-staff-priority #-100 _"B.D."
+      -\tweak outside-staff-priority #1000 \mf 
+    r4 r2 r4 |
     bd2 r4 r2 r4 |
     % p. 3
     bd2 r4 r2 r4 bd2 r4 |
