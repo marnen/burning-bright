@@ -182,6 +182,7 @@ staffContrabass = \new Staff {
 }
 
 \paper {
+  left-margin = 1\in
 }
 
 
