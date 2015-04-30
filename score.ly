@@ -6,7 +6,7 @@
   title = "Burning Bright"
   poet = "John Steinbeck"
    composer = "Marnen E. Laibow-Koser"
-   copyright = "Copyright © 2010–2011 Marnen E. Laibow-Koser. All rights reserved."
+   copyright = "Copyright © 2010–2014 Marnen E. Laibow-Koser (ASCAP). All rights reserved."
 
 }
 
