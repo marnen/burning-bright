@@ -43,7 +43,7 @@ violinIINotes = {
     r d'=''( b a gs d) r b'( a g d b) r g'( f d b gs)
     \key c \minor
     % 4/4
-    r\! c='\p( g' c,)
+    r\! c='\p( g' c,) r c( g' c,)
   }
 }
 
